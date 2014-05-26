@@ -1,0 +1,121 @@
+body{
+	background-color: white;
+	font-family: sans-serif;
+	font-size: 13px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	line-height: 1.231;
+	margin: 0px;
+}
+#div_wrapper{
+    background-color: #7E8F7C;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 96%;
+    max-width: 100%;
+    max-height: 100%;
+    text-align: center;
+}
+a.active{
+	background-color: #7E8F7C !important;
+	font-weight: bold !important;
+}
+ul.menu li a{
+	font-size: 18px;
+	font-weight: normal;
+	background-color: #BEC1B2;
+ 	padding-top: 1px;
+ 	padding-right: 10px;
+ 	padding-left: 10px;
+ 	color: #000;
+	text-decoration:none;
+  	border-top-left-radius:20px;
+	border-top-right-radius:20px;
+	/*box-shadow: 0px -1px 0px rgba(0, 0, 0, 0.75); /*1. null 2. null 3.Degrading */
+}
+ul.menu li{
+	position: relative;
+	display: block;
+	list-style-type: none;
+	float: left;
+}
+li{
+	line-height: 18px;
+}
+h1{
+	left: 0;
+	top: 0;
+}
+nav.full{
+	position: relative;
+    top: -49px;
+    left: -20px;
+}
+#div_email_pw{
+	position: absolute;
+	border-radius: 1px;
+	padding-top: 20px;
+	padding-left: 20px;
+	display: block;
+	font-size: 16px;
+}
+#div_userbox{
+	position: absolute;
+	left: 0; top: 0; right: 0; bottom: 0;
+	margin: auto auto;
+	background: #7E8F7C;  /*#7E8F7C med trans*/
+	border-radius: 20px;
+	box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.75);
+	width: 500px; 
+	max-height: 290px;
+}
+#div_regform{
+	position: absolute;
+	border-radius: 1px;
+	padding-top: 20px;
+	padding-left: 20px;
+	display: block;
+	font-size: 16px;
+}
+input{
+	margin-top: 10px;
+	padding: 0 8px;
+	width: 409px;
+	height: 30px;
+}
+.b_login {
+	position: absolute;
+	right: 10px;
+	bottom: -70px;
+	background-color: #C63D0F;
+	border-color: #3B3738;
+	border-top-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	text-indent: 0;
+	display: inline-block;
+	color: #ffffff;
+	font-size: 16px;
+	font-weight: bold;
+	font-style: normal;
+	height: 50px;
+	line-height: 50px;
+	width: 100px;
+	text-decoration: none;
+	text-align: center;
+}
+.b_login:hover {
+	background-color: #ce0100;
+}
+#logga{
+	height: 60.25px;
+	width: 50px;
+	position: absolute;
+	top: -70px;
+	right: 0;
+}
+/*#C63D0F 	red
+#3B3738		svart
+#FDF3E7		vit
+#7E8F7C		grön/grå	*/
