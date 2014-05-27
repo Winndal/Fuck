@@ -9,6 +9,8 @@ body{
 	margin: 0px;
 }
 #div_wrapper{
+	/*position: absolute; 			Why? Help me!*/ 
+	z-index: -1;
     background-color: #7E8F7C;
     top: 0;
     left: 0;
@@ -17,6 +19,9 @@ body{
     max-width: 100%;
     max-height: 100%;
     text-align: center;
+}
+.banner a{
+	font-size: 18px;
 }
 a.active{
 	background-color: #7E8F7C !important;
@@ -57,7 +62,6 @@ nav.full{
 	position: absolute;
 	border-radius: 1px;
 	padding-top: 20px;
-	padding-left: 20px;
 	display: block;
 	font-size: 16px;
 }
@@ -68,14 +72,19 @@ nav.full{
 	background: #7E8F7C;  /*#7E8F7C med trans*/
 	border-radius: 20px;
 	box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.75);
-	width: 500px; 
+	width: 500px;
+}
+.bigbox{
+	top: 90px !important;
 	max-height: 290px;
+}
+.smallbox{
+	max-height: 200px;
 }
 #div_regform{
 	position: absolute;
 	border-radius: 1px;
 	padding-top: 20px;
-	padding-left: 20px;
 	display: block;
 	font-size: 16px;
 }

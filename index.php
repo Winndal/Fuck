@@ -7,8 +7,8 @@
 	</head>
 	<body>
 		<div id="div_wrapper">
-			<a>Banner?</a>
-			<div id="div_userbox">
+			<a id="banner">Welcome to University Crowdsourcing</a>
+			<div id="div_userbox" class="smallbox">
 			<img src="Assets/img/logga_fix.jpg" id="logga">
 				<nav class="full">
 					<ul class="menu">
