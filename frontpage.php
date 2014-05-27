@@ -19,33 +19,31 @@ if(!isset($_SESSION['loggedin'])){
  	</head>
  	<body>
  		<div id="banner">
- 			<form action="logout.php" name="logoutform" id='Logout'>
+ 			<form action="logout.php" name="logoutform" id='form_logout'>
 						<input id="logoutBtn" type='submit' name='Logout' value='Logout'>
 			</form>
  		</div>
  		<div id="mainDiv">
+ 			<div id="searchDiv">
+ 				<input type="text" placeholder="Search..." class="Search">
+ 			</div>
  			<div id="profile">
  				<img id="icon" src="Assets/img/icon.png">
  				<a href="/profile" id="href_profile">Pontus Sundberg</a>
  			</div>
- 			<div id="menyDiv">
+ 			<!--<div id="menyDiv">
  				<ul class="menu">
  					<li><a name="mycourses" >My Courses</a></li>	
  					<li><a name="uploadbtn" onclick="return loadmeny()">Upload file</a></li>
  					<li><a name="addCourse" onclick="return loadNewCourse()">Add course<a/></li>	
 				</ul>
  			</div>
- 		</div>
- 		<div id="contentDiv"> 
- 			<p>CONTENT</p>
- 		</div>
- 		<div id="reklamDiv">
- 			<img id="reklam" src="Assets/img/unics_reklam.jpg">
- 		</div>
- 		<div id="searchDiv">
- 				<form action"searchCourse.php" method="POST">
- 					<input type="text" name="search" placeholder="Search..." class="Search">
- 				</form>
+ 			<div id="contentDiv"> 
+ 				<p>CONTENT</p>
+ 			</div>
+ 			<div id="reklamDiv">
+ 				<img id="reklam" src="Assets/img/unics_reklam.jpg">
+ 			</div>-->
  		</div>
  	</body>
 </html>
