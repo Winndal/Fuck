@@ -1,12 +1,4 @@
-<?php
-	
-	if(!isset($_SESSION['loggedin'])){ //SÄKERHET
-		echo "<script>
-           alert('Please login or sign up!'	);
-           window.location.href='index.php';
-          </script>";
-      }
-    
+<?php    
 	if(isset($_POST["Fname"]))
 	{
 
