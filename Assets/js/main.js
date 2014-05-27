@@ -34,3 +34,8 @@ function loadmeny()
 	$("#contentDiv").load("kursvy.php");
 	
 }
+
+function loadNewCourse()
+{
+  $("#contentDiv").load("createCoursehtml.php");
+}

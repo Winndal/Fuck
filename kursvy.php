@@ -10,11 +10,11 @@
  	</head>
  	<body> 
  		<form action="upload_file.php" method="post" enctype="multipart/form-data">
-			<label for="file">Fil namn:</label>
+			<label for="file">File name:</label>
 			<input type="file" name="file" id="file"><br>
-			<input type="text" name="filnamn" id="f1" placeholder="filnamn..."><br>
-			<input type="text" name="kurskod" id="f1" placeholder="kurskod..."><br>
-			<input type="submit" name="submit" value="ladda upp">
+			<input type="text" name="filnamn" id="f1" placeholder="File name..."><br>
+			<input type="text" name="kurskod" id="f1" placeholder="Course code..."><br>
+			<input type="submit" name="submit" value="Upload">
 		</form>	
  </body>
 </html>

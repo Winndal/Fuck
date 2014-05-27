@@ -10,7 +10,6 @@
  				   echo "Failed to connect to MySQL: " . mysqli_connect_error();
 				  }
 
-				  var_dump($_POST);
 				  $courseName = mysqli_real_escape_string($con, $_POST["kursnamn"]);
 				  $courseCode = mysqli_real_escape_string($con, $_POST["kurskod"]);
 				  $startDate = mysqli_real_escape_string($con, $_POST["startdatum"]);
@@ -20,7 +19,11 @@
 				  		if(strlen($startDate) === 10 && strlen($endDate) === 10){
 				  				  $courseQuery = "INSERT INTO kurser(kursnamn, kurskod, startdatum, slutdatum) VALUES ('$courseName', '$courseCode', '$startDate', '$endDate')";
 				   					mysqli_query($con,$courseQuery);
-				   					echo"SUCCESS!!";
+				   					
+				   					echo "<script>
+           							alert('New course has been created!');
+					           		window.location.href='frontpage.php';
+					          		</script>";
 				   }
 				 
 				  }

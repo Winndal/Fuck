@@ -18,7 +18,11 @@ if(!isset($_SESSION['loggedin'])){
 		<script src="Assets/js/main.js"></script> 
  	</head>
  	<body>
- 		<div id="banner"><button href="logout.php" id="btn_logout" value="Logut"></button></div>
+ 		<div id="banner">
+ 			<form action="logout.php" name="logoutform" id='Logout'>
+						<input id="logoutBtn" type='submit' name='Logout' value='Logout'>
+			</form>
+ 		</div>
  		<div id="mainDiv">
  			<div id="profile">
  				<img id="icon" src="Assets/img/icon.png">
@@ -27,18 +31,19 @@ if(!isset($_SESSION['loggedin'])){
  			<div id="menyDiv">
  				<ul class="menu">
  					<li><a name="mycourses" >My Courses</a></li>	
- 					<li><a name="uploadbtn" onclick="return loadmeny()">Upload file</a></li>	
+ 					<li><a name="uploadbtn" onclick="return loadmeny()">Upload file</a></li>
+ 					<li><a name="addCourse" onclick="return loadNewCourse()">Add course<a/></li>	
 				</ul>
  			</div>
  		</div>
- 		<div id="contentDiv" onclick="return loadmeny()"> 
+ 		<div id="contentDiv"> 
  			<p>CONTENT</p>
  		</div>
  		<div id="reklamDiv">
  			<img id="reklam" src="Assets/img/unics_reklam.jpg">
  		</div>
  		<div id="searchDiv">
- 			<input type="text" placeholder="Sök..." class="Search">
+ 			<input type="text" placeholder="Search..." class="Search">
  		</div>
  	</body>
 </html>
