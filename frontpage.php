@@ -15,7 +15,7 @@ if(!isset($_SESSION['loggedin'])){
 		<link href="Assets/css/frontpage.css" rel="stylesheet">
 		<meta charset="UTF-8">
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-		<script src="main.js"></script> 
+		<script src="Assets/js/main.js"></script> 
  	</head>
  	<body>
  		<div id="banner"><button href="logout.php" id="btn_logout" value="Logut"></button></div>

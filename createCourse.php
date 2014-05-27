@@ -17,11 +17,12 @@
 				  $endDate = mysqli_real_escape_string($con, $_POST["slutdatum"]); 
 
 				  if(isset($courseName) && isset($courseCode) && isset($startDate) && isset($endDate)){
-				  		/*if(strlen($startDate) === 10 && strlen($endDate) === 10){
-				  				$query = "INSERT INTO kurser(kursnamn, kurskod, startdatum, slutdatum) VALUES ('$courseName', '$courseCode', '$startDate', 'endDate')";
-				   }*/
-				   $courseQuery = "INSERT INTO kurser(kursnamn, kurskod, startdatum, slutdatum) VALUES ('$courseName', '$courseCode', '$startDate', '$endDate')";
-				   mysqli_query($con,$courseQuery);
+				  		if(strlen($startDate) === 10 && strlen($endDate) === 10){
+				  				  $courseQuery = "INSERT INTO kurser(kursnamn, kurskod, startdatum, slutdatum) VALUES ('$courseName', '$courseCode', '$startDate', '$endDate')";
+				   					mysqli_query($con,$courseQuery);
+				   					echo"SUCCESS!!";
+				   }
+				 
 				  }
 
 	 if (mysqli_error($con)) 
