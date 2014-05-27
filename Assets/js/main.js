@@ -39,3 +39,8 @@ function loadNewCourse()
 {
   $("#contentDiv").load("createCoursehtml.php");
 }
+
+function loadSearch()
+{
+  $("#contentDiv").load("searchCourse.php");
+}

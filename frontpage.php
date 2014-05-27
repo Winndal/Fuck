@@ -43,7 +43,9 @@ if(!isset($_SESSION['loggedin'])){
  			<img id="reklam" src="Assets/img/unics_reklam.jpg">
  		</div>
  		<div id="searchDiv">
- 			<input type="text" placeholder="Search..." class="Search">
+ 				<form action"searchCourse.php" method="POST">
+ 					<input type="text" name="search" placeholder="Search..." class="Search">
+ 				</form>
  		</div>
  	</body>
 </html>
