@@ -3,12 +3,10 @@
 <?php session_start();
 if(!isset($_SESSION['loggedin'])){
 		echo "<script>
-           alert('Please login! :)');
+           alert('Please login, if you don't have an account you can sign up!');
            window.location.href='index.php';
           </script>";
-}
-	echo "Welcome, you are now logged in as: ". $_SESSION['email']; 
-
+      }
 ?>
 
 <html>
