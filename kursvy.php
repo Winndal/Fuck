@@ -9,8 +9,7 @@
 		<script src="main.js"></script> 
  	</head>
  	<body> 
- 		<form action="upload_file.php" method="post"
-			enctype="multipart/form-data">
+ 		<form action="upload_file.php" method="post" enctype="multipart/form-data">
 			<label for="file">Fil namn:</label>
 			<input type="file" name="file" id="file"><br>
 			<input type="text" name="filnamn" id="f1" placeholder="filnamn..."><br>
