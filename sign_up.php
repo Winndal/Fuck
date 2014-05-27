@@ -7,13 +7,15 @@
 	</head>
 	<body>
 		<div id="div_wrapper">
-			<a id="banner">Welcome to University Crowdsourcing</a>
+			<a id="banner">Welcome to University Crowdsourcing!</a>
+		</div>
+		<div id="main">
 			<div id="div_userbox" class="bigbox">
-			<img src="Assets/img/logga_fix.jpg" id="logga">
+			<img src="Assets/img/icon.png" id="logga">
 				<nav class="full">
 					<ul class="menu">
 						<li><h1><a id="start" href="index.php">Start</a></h1> </li>
-						<li><h1><a id="sign_up" href="sign_up.php" class="active">Sign up!</a></h1></li>
+						<li><h1><a id="sign_up" href="sign_up.php" class="active">Sign up</a></h1></li>
 					</ul>
 				</nav>
 				<div id="div_regform">
