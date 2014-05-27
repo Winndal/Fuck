@@ -1,5 +1,13 @@
 <?php session_start();
 	
+
+if(!isset($_SESSION['loggedin'])){ //SÄKERHET
+		echo "<script>
+           alert('Please login or sign up!'	);
+           window.location.href='index.php';
+          </script>";
+      }
+
 	if(isset($_POST["kurskod"]))
 	{
 

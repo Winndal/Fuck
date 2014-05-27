@@ -1,7 +1,12 @@
 <?php
 	
-    //die(var_dump($_POST["Fname"])); L2U.
-
+	if(!isset($_SESSION['loggedin'])){ //SÄKERHET
+		echo "<script>
+           alert('Please login or sign up!'	);
+           window.location.href='index.php';
+          </script>";
+      }
+    
 	if(isset($_POST["Fname"]))
 	{
 
