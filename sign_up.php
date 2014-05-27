@@ -16,6 +16,7 @@
 					<ul class="menu">
 						<li><h1><a id="start" href="index.php">Start</a></h1> </li>
 						<li><h1><a id="sign_up" href="sign_up.php" class="active">Sign up</a></h1></li>
+						<li><h1><a href="info.php">Info</a></h1></li>
 					</ul>
 				</nav>
 				<div id="div_regform">

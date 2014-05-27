@@ -83,6 +83,7 @@ ul.menu li a{
     left: 15%;
     right: 15%;
     border: 1px; border: solid; border-color: gray;
+    min-width: 800px;
 }
 #reklamDiv{
     position: absolute;

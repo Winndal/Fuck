@@ -16,6 +16,7 @@
 					<ul class="menu">
 						<li><h1><a href="index.php" class="active">Start</a></h1></li>
 						<li><h1><a href="sign_up.php">Sign up</a></h1></li>
+						<li><h1><a href="info.php">Info</a></h1></li>
 					</ul>
 				</nav>
 				<div id="div_email_pw">
