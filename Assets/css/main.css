@@ -114,6 +114,27 @@ input{
 	text-decoration: none;
 	text-align: center;
 }
+#register{
+	position: absolute;
+	right: 10px;
+	bottom: -70px;
+	background-color: #C63D0F;
+	border-color: #3B3738;
+	border-top-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	text-indent: 0;
+	display: inline-block;
+	color: #ffffff;
+	font-size: 16px;
+	font-weight: bold;
+	font-style: normal;
+	height: 50px;
+	line-height: 50px;
+	width: 100px;
+	text-decoration: none;
+	text-align: center;
+	
+}
 .b_login:hover {
 	background-color: #ce0100;
 }

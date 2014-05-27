@@ -26,8 +26,8 @@ if(!isset($_SESSION['loggedin'])){
  			<div id="menyDiv">
  				<ul class="menu">
  					<li><a name="kurserimenyn" onclick="return loadmeny()">Kurser</a></li>
- 					<li><h1><a href="/">Filer</a></h1></li>	
- 					<li><h1><a href="/">Annat</a></h1></li>	
+ 					<li><a href="/">My Courses</a></li>	
+ 					<li><a href="/">Upload file</a></li>	
 				</ul>
  			</div>
  		</div>
