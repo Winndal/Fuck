@@ -3,7 +3,7 @@
 <?php session_start();
 if(!isset($_SESSION['loggedin'])){
 		echo "<script>
-           alert('Please login, if you don't have an account you can sign up!');
+           alert('Please login or sign up!'	);
            window.location.href='index.php';
           </script>";
       }
