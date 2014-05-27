@@ -30,18 +30,18 @@ if(!isset($_SESSION['loggedin'])){
  			<div id="profile">
  				<img id="icon" src="Assets/img/icon.png">
  				<a href="/profile" id="href_profile">Pontus Sundberg</a>
+ 				<div id="menyDiv">
+ 					<ul class="menu">
+ 						<li><a name="mycourses" >My Courses</a></li>	
+ 						<li><a name="uploadbtn" onclick="return loadmeny()">Upload file</a></li>
+ 						<li><a name="addCourse" onclick="return loadNewCourse()">Add course<a/></li>	
+					</ul>
  			</div>
- 			<!--<div id="menyDiv">
- 				<ul class="menu">
- 					<li><a name="mycourses" >My Courses</a></li>	
- 					<li><a name="uploadbtn" onclick="return loadmeny()">Upload file</a></li>
- 					<li><a name="addCourse" onclick="return loadNewCourse()">Add course<a/></li>	
-				</ul>
  			</div>
  			<div id="contentDiv"> 
  				<p>CONTENT</p>
  			</div>
- 			<div id="reklamDiv">
+ 			<!--<div id="reklamDiv">
  				<img id="reklam" src="Assets/img/unics_reklam.jpg">
  			</div>-->
  		</div>

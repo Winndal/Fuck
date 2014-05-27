@@ -14,8 +14,8 @@ p{
     position: absolute;
     background-color: #749C3F;
     top: 0;
-    left: 20%;
-    right: 20%;
+    left: 10%;
+    right: 10%;
     bottom: 96%;
     min-height: 30px;
     text-align: right;
@@ -23,32 +23,34 @@ p{
 #mainDiv{
     position: absolute;
     top: 30px;
-    left: 20%;
-    right: 20%;
+    left: 10%;
+    right: 10%;
     bottom: 100%;
 }
 #profile{
-    position: relative;
-    max-width: 200px;
-    max-height: 40px;
-    margin-left:auto;
-    margin-right:auto;
+    position: absolute;
+    right: calc(100% - 200px);
+    min-width: 200px;
+    max-width: 300px;
+    margin-right: 0px;
+    margin-top: 2px;
 }
 #href_profile{
     position: absolute;
-    padding: 10px; 
+    padding: 10px;
     float: left;
     text-decoration: none;
     color: #3B3738;
     font-size: 17px;
 }
 #searchDiv{
-    position: relative;
+    position: absolute;
     left: calc(100% - 170px);
     max-width: 170px;
     max-height: 36px;
     margin-top: 2px;
     margin-bottom: 2px;
+    margin-right: 2px;
 }
 input.Search{
     position: relative;
@@ -58,27 +60,29 @@ input.Search{
     font-size: 14px;
 }
 #menyDiv{
-    position: absolute;
-    top: 10%; 
-    right: 785px; 
-    bottom: 0; 
-    left: 0;
-    max-width: 175px;
-    margin-left:auto;
-    margin-right:auto;
+    position: relative;
+    left: 20px;
+}
+ul.menu li a{
+    cursor: pointer;
+}
+ul.menu li.active ul{
+    display: block;
+}
+ul.menu{
+    padding-left: 0px;
+}
+ul.menu li a{
+    text-decoration: none;
+    color: #3B3738;
+    font-size: 16px;
 }
 #contentDiv{
-    position: absolute;
-    top: 65px; 
-    right: 0; 
-    bottom: 0; 
-    left: 0;
-    max-width: 600px;
-    margin-left:auto;
-    margin-right:auto;
-    border: 1px;
-    border: solid;
-    border-color: gray;
+    position: relative;
+    max-width: 70%;
+    left: 15%;
+    right: 15%;
+    border: 1px; border: solid; border-color: gray;
 }
 #reklamDiv{
     position: absolute;
@@ -96,20 +100,6 @@ input.Search{
 }
 #form_logout{
     min-height: 30px;
-}
-ul.menu li a{
-    cursor: pointer;
-}
-ul.menu li.active ul{
-    display: block;
-}
-ul.menu{
-    padding-left: 0px;
-}
-ul.menu li a{
-    text-decoration: none;
-    color: #3B3738;
-    font-size: 16px;
 }
 ul.kurslista{
     padding-left: 10%;
