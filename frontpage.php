@@ -18,9 +18,12 @@ if(!isset($_SESSION['loggedin'])){
 		<script src="main.js"></script> 
  	</head>
  	<body>
- 		<div id="banner"><button href="logout.php" id="btn_logout"></button></div>
+ 		<div id="banner"><button href="logout.php" id="btn_logout" value="Logut"></button></div>
  		<div id="mainDiv">
- 			<div id="profile_icon"><a href="logout.php" id="href_profile">Viktor Springe</a></div>
+ 			<div id="profile">
+ 				<img id="icon" src="Assets/img/icon.png">
+ 				<a href="/profile" id="href_profile">Pontus Sundberg</a>
+ 			</div>
  			<div id="menyDiv">
  				<ul class="menu">
  					<li><a name="mycourses" >My Courses</a></li>	
@@ -34,8 +37,8 @@ if(!isset($_SESSION['loggedin'])){
  		<div id="reklamDiv">
  			<img id="reklam" src="Assets/img/unics_reklam.jpg">
  		</div>
- 		<div id="barDiv">
- 			<div id="searchDiv"><input type="text" placeholder="Sök..." class="Search"></div>
+ 		<div id="searchDiv">
+ 			<input type="text" placeholder="Sök..." class="Search">
  		</div>
  	</body>
 </html>

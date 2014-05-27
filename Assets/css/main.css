@@ -71,6 +71,14 @@ nav.full{
 	width: 500px; 
 	max-height: 290px;
 }
+#div_userbox.bigbox{
+	top: 90px !important;
+	width: 500px; 
+	max-height: 290px;
+}
+#div_userbox.smallbox{
+	max-height: 200px;
+}
 #div_regform{
 	position: absolute;
 	border-radius: 1px;
