@@ -52,8 +52,8 @@ p{
 }
 
 #contentDiv{
-	position: relative;
-    top: 35px; 
+	position: absolute;
+    top: 80px; 
     right: 0; 
     bottom: 0; 
     left: 0;
@@ -63,14 +63,17 @@ p{
 	border-color: gray;
 }
 #reklamDiv{
-	position: relative;
-    top: 35px; 
-    right: 0; 
+	position: absolute;
+    top: 80px; 
+    right: -800px; 
     bottom: 0; 
     left: 0px;
     max-width: 175px;
     margin-left:auto;
 	margin-right:auto;
+}
+#reklam{
+    box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.75);
 }
 #banner{
     position: absolute;
@@ -98,11 +101,6 @@ p{
     top: 0;
     left: 0;
     background-color: black;
-}
-#reklam{
-    box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.75);
-    margin-top: 10px;
-    margin-left: 10px;
 }
 input.Search{
     margin-top: 3.5px;
