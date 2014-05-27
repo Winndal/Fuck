@@ -33,6 +33,14 @@
 						$_SESSION ['loggedin'] = 'true';
 						header("location: frontpage.php");
 			  }
+			  else
+			  {
+			  	echo "<script>
+           		alert('You have entered wrong email or password, please try again.');
+           		window.location.href='index.php';
+          		</script>";
+			  }
+
 
 	 if (mysqli_error($con)) 
  		{
