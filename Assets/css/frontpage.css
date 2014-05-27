@@ -32,7 +32,6 @@ p{
 #searchDiv{
 	position: relative;
     top: 0; 
-    left: 210px; 
     max-width: 150px;
     max-height: 36px;
     margin-left:auto;
@@ -42,7 +41,7 @@ p{
 }
 #menyDiv{
 	position: absolute;
-    top: 35px; 
+    top: 80px; 
     right: 785px; 
     bottom: 0; 
     left: 0;
@@ -68,7 +67,7 @@ p{
     right: -800px; 
     bottom: 0; 
     left: 0px;
-    max-width: 175px;
+    max-width: 185px;
     margin-left:auto;
 	margin-right:auto;
 }
@@ -110,12 +109,11 @@ input.Search{
     font-size: 14px;
     text-align: left;
 }
-ul.menu li ul{
-    display: none;
+ul.menu li a{
+    cursor: pointer;
 }
 ul.menu li.active ul{
     display: block;
-
 }
 ul.menu{
     padding-left: 0px;
@@ -124,9 +122,6 @@ ul.menu li a{
     text-decoration: none;
     color: #3B3738;
     font-size: 16px;
-}
-ul.menu li h1{
-    margin: 0px;
 }
 ul.kurslista{
     padding-left: 10%;
