@@ -23,6 +23,8 @@ if(!isset($_SESSION['loggedin'])){
  			<div id="profile_icon"><a href="logout.php" id="href_profile">Viktor Springe</a></div>
  			<div id="menyDiv">
  				<ul class="menu">
+ 					
+
  					<li><a class="leftmeny" name="mycourses" >My Courses</a></li>	
  					<li><a class="leftmeny" name="uploadbtn" onclick="return loadmeny()">Upload file</a></li>	
 				</ul>
