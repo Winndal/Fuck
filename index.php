@@ -20,7 +20,7 @@
 					<form action="addLogin.php" name="loginForm" id='Login' method='POST'>
 						<input id="email" name="loginEmail" placeholder="Your email">
 						<input id="pw" type="password" name="password" placeholder="The password">
-						<input class="b_login" id="loginBtn" type='submit' name='Login' value='Login' />
+						<input class="b_login" id="loginBtn" type='submit' name='Login' value='Login'>
 					</form>
 				</div>
 			</div>

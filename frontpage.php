@@ -18,7 +18,7 @@ if(!isset($_SESSION['loggedin'])){
 		<script src="main.js"></script> 
  	</head>
  	<body>
- 		<div id="banner"><p>BANNER</p></div>
+ 		<div id="banner"><button href="logout.php" id="btn_logout"></button></div>
  		<div id="mainDiv">
  			<div id="profile_icon"><a href="logout.php" id="href_profile">Viktor Springe</a></div>
  			<div id="menyDiv">
