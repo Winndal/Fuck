@@ -125,11 +125,9 @@ input{
 	cursor: pointer;
 }
 #logga{
-	height: 60.25px;
-	width: 50px;
 	position: absolute;
-	top: -70px;
-	right: 0;
+	bottom: 10px;
+	left: 10px;
 }
 /*#C63D0F 	red
 #3B3738		svart

@@ -19,6 +19,7 @@ if(!isset($_SESSION['loggedin'])){
  	</head>
  	<body>
  		<div id="banner">
+ 			<a>UniCs</a>
  			<form action="logout.php" name="logoutform" id='form_logout'>
 						<input id="logoutBtn" type='submit' name='Logout' value='Logout'>
 			</form>
@@ -32,9 +33,14 @@ if(!isset($_SESSION['loggedin'])){
  				<a href="/profile" id="href_profile">Pontus Sundberg</a>
  				<div id="menyDiv">
  					<ul class="menu">
- 						<li><a name="mycourses" >My Courses</a></li>	
+ 						<li><a name="mycourses" >My Courses</a></li>
+ 						<li><a name="myprodjects" >My Prodjects</a></li>	
+ 						<li><a name="msg" >Send message</a></li>
  						<li><a name="uploadbtn" onclick="return loadmeny()">Upload file</a></li>
- 						<li><a name="addCourse" onclick="return loadNewCourse()">Add course<a/></li>	
+ 						<li><a name="addCourse" onclick="return loadNewCourse()">Add course<a/></li>
+ 						<li><a name="addprodject" >Add prodject</a></li>
+ 						<li><a name="Q-A" >Q&A</a></li>
+ 						<li><a name="Report" >Report content</a></li>	
 					</ul>
  			</div>
  			</div>

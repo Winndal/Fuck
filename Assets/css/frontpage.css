@@ -17,8 +17,10 @@ p{
     left: 10%;
     right: 10%;
     bottom: 96%;
-    min-height: 30px;
+    height: 30px;
     text-align: right;
+    border-bottom-left-radius:20px;
+    border-bottom-right-radius:20px;
 }
 #mainDiv{
     position: absolute;
@@ -30,10 +32,14 @@ p{
 #profile{
     position: absolute;
     right: calc(100% - 200px);
+    top: 100px;
+    left: 10px;
     min-width: 200px;
     max-width: 300px;
     margin-right: 0px;
     margin-top: 2px;
+    background-color: #749C3F;
+    border-radius: 20px;
 }
 #href_profile{
     position: absolute;
@@ -63,16 +69,19 @@ input.Search{
     position: relative;
     left: 20px;
 }
-ul.menu li a{
-    cursor: pointer;
+ul.menu a{
+    padding-top: 1px;
+
 }
 ul.menu li.active ul{
     display: block;
 }
 ul.menu{
+    list-style-type: none;
     padding-left: 0px;
 }
 ul.menu li a{
+    cursor: pointer;
     text-decoration: none;
     color: #3B3738;
     font-size: 16px;
