@@ -1,3 +1,6 @@
+html, body{
+    min-width: 1400px;
+}
 body{
     background: white;
     font-family: sans-serif;
@@ -5,7 +8,7 @@ body{
     font-style: normal;
     font-variant: normal;
     font-weight: normal;
-    line-height: 1.231;;
+    line-height: 1.231;
 }
 p{
     margin:0;
@@ -18,9 +21,9 @@ p{
     right: 10%;
     bottom: 96%;
     height: 30px;
-    text-align: right;
     border-bottom-left-radius:20px;
     border-bottom-right-radius:20px;
+    min-width: 1130px;
 }
 #mainDiv{
     position: absolute;
@@ -50,7 +53,7 @@ p{
     font-size: 17px;
 }
 #searchDiv{
-    position: absolute;
+    position: relative;
     left: calc(100% - 170px);
     max-width: 170px;
     max-height: 36px;
@@ -92,7 +95,6 @@ ul.menu li a{
     left: 20%;
     right: 15%;
     border: 1px; border: solid; border-color: gray;
-    min-width: 800px;
     top: 50px;
 }
 #reklamDiv{
@@ -110,7 +112,30 @@ ul.menu li a{
     border: 1px solid; 
 }
 #form_logout{
+    position: absolute;
+    right: 5px;
     min-height: 30px;
+}
+#logoutBtn{
+    font-family: Century !important;
+    font-size: 17px !important;
+    color: white;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-family: inherit;
+    font-size: inherit;
+}
+#logoutBtn:hover{
+    cursor: pointer;
+}
+#banner a{
+    position: absolute;
+    font-family: Century !important;
+    font-size: 16px !important;
+    color: white;
+    left: 100px;
+    top: 5px;
 }
 ul.kurslista{
     padding-left: 10%;

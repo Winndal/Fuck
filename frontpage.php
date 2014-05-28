@@ -18,10 +18,11 @@ if(!isset($_SESSION['loggedin'])){
 		<script src="Assets/js/main.js"></script> 
  	</head>
  	<body>
+ 		<img src="Assets/img/lov.jpg">
  		<div id="banner">
- 			<a>UniCs</a>
+ 			<a>"Live as if you were to die tomorrow. Learn as if you were to live forever. - Mahatma Gandhi"</a>
  			<form action="logout.php" name="logoutform" id='form_logout'>
-						<input id="logoutBtn" type='submit' name='Logout' value='Logout'>
+				<input id="logoutBtn" type='submit' name='Logout' value='Log Out'>
 			</form>
  		</div>
  		<div id="mainDiv">
@@ -38,9 +39,9 @@ if(!isset($_SESSION['loggedin'])){
  						<li><a name="mycourses" >My Courses</a></li>
  						<li><a name="myprodjects" >My Prodjects</a></li>	
  						<li><a name="msg" >Send message</a></li>
+ 						<li><a name="addCourse" onclick="return loadNewCourse()">Create a course</a></li>	
+ 						<li><a name="addprodject" >Create a prodject</a></li>
  						<li><a name="uploadbtn" onclick="return loadmeny()">Upload file</a></li>
- 						<li><a name="addCourse" onclick="return loadNewCourse()">Add course</a></li>	
- 						<li><a name="addprodject" >Add prodject</a></li>
  						<li><a name="Q-A" >Q&A</a></li>
  						<li><a name="Report" >Report content</a></li>	
 					</ul>
