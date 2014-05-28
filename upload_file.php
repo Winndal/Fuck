@@ -103,7 +103,8 @@ if(isset($_POST["filnamn"]) && ($_POST["kurskod"]))
 			    {
 			    	move_uploaded_file($_FILES["file"]["tmp_name"],
 			    	"Assets/upload/" . $_FILES["file"]["name"]);
-			    	$query = "INSERT INTO filer (filnamn, email, kurskod) VALUES ('$filnamn', '$email', '$kurskod')"; 
+			    	$sparatfilnamn = $_FILES["file"]["name"];
+			    	$query = "INSERT INTO filer (filnamn, email, kurskod, sparatfilnamn) VALUES ('$filnamn', '$email', '$kurskod', '$sparatfilnamn')"; 
 			    	mysqli_query($con,$query); //läser in lägger till till databasen
 					if (mysqli_error($con)) 
  					{
