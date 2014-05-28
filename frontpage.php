@@ -7,6 +7,7 @@ if(!isset($_SESSION['loggedin'])){
            window.location.href='index.php';
           </script>";
       }
+      
 ?>
 
 <html>
@@ -33,7 +34,7 @@ if(!isset($_SESSION['loggedin'])){
  			</div>
  			<div id="profile">
  				<img id="icon" src="Assets/img/icon.png">
- 				<a href="/profile" id="href_profile">Pontus Sundberg</a>
+ 				<a href="/profile" id="href_profile"><?php echo $_SESSION['wholeName']; ?></a>
  				<div id="menyDiv">
  					<ul class="menu">
  						<li><a name="mycourses" >My Courses</a></li>
