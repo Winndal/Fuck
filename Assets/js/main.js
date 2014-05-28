@@ -34,7 +34,7 @@ function loadmeny()
 	$("#contentDiv").load("kursvy.php");
 	
 }
-
+  
 function loadNewCourse()
 {
   $("#contentDiv").load("createCoursehtml.php");
@@ -42,5 +42,15 @@ function loadNewCourse()
 
 function loadSearch()
 {
-  $("#contentDiv").load("searchCourse.php");
+  var data = {
+    data: document.forms["searchForm"]["search"].value
+  };
+
+  $("#contentDiv").load("searchCourse.php", data);
+  return false;
 }
+
+$(function(){
+  // när man klickar på serach, kör finltion loadSearch
+  $("#searchDiv form").submit(loadSearch);
+});

@@ -1,7 +1,8 @@
 <?php
-echo"MJES";
-		if(isset($_POST["search"]))
+
+				if(isset($_POST["data"]))
 	{
+		
 
 			$con = mysqli_connect('localhost','root','','unics');
 	
@@ -11,9 +12,9 @@ echo"MJES";
 				  }
 
 
-			$Search = mysqli_real_escape_string($con, $_POST["search"]);
+			$Search = mysqli_real_escape_string($con, $_POST["data"]);
 
-			$searchQuery = "SELECT kurskod FROM kurser WHERE kurskod = '$search'";
+			$searchQuery = "SELECT kurskod FROM kurser WHERE kurskod = '$Search'";
 			$searchResult = mysqli_query($con, $searchQuery);
 			$arr1 = mysqli_fetch_assoc($searchResult);
 			$courses = $arr1['kurskod'];
@@ -24,11 +25,11 @@ echo"MJES";
 			}
 			else
 			{
-				echo"Kursens kod finns inte!"
+				echo"Kursens kod finns inte!";
 			}
 
 
-			$searchQuery = "SELECT kursnamn FROM kurser WHERE kursnamn = '$search'";
+			$searchQuery = "SELECT kursnamn FROM kurser WHERE kursnamn = '$Search'";
 			$searchResult = mysqli_query($con, $searchQuery);
 			$arr2 = mysqli_fetch_assoc($searchResult);
 			$courses = $arr2['kursnamn'];
@@ -48,6 +49,7 @@ echo"MJES";
  		}
 
  	mysqli_close($con); 
- 	
+ 		
 	}
+
 ?>

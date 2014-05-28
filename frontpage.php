@@ -25,7 +25,9 @@ if(!isset($_SESSION['loggedin'])){
  		</div>
  		<div id="mainDiv">
  			<div id="searchDiv">
- 				<input type="text" placeholder="Search..." class="Search">
+ 				<form method="POST" name="searchForm">
+ 					<input type="text" name="search" placeholder="Search..." class="Search">
+ 				</form>
  			</div>
  			<div id="profile">
  				<img id="icon" src="Assets/img/icon.png">
@@ -34,7 +36,7 @@ if(!isset($_SESSION['loggedin'])){
  					<ul class="menu">
  						<li><a name="mycourses" >My Courses</a></li>	
  						<li><a name="uploadbtn" onclick="return loadmeny()">Upload file</a></li>
- 						<li><a name="addCourse" onclick="return loadNewCourse()">Add course<a/></li>	
+ 						<li><a name="addCourse" onclick="return loadNewCourse()">Add course</a></li>	
 					</ul>
  			</div>
  			</div>
