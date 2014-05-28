@@ -87,10 +87,10 @@ ul.menu li a{
     font-size: 16px;
 }
 #contentDiv{
-    position: absolute;
+    position: relative;
     max-width: 70%;
-    left: 15%;
-    right: calc(15% + 20px);
+    left: 20%;
+    right: 15%;
     border: 1px; border: solid; border-color: gray;
     min-width: 800px;
     top: 50px;
