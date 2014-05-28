@@ -74,4 +74,7 @@ if ((($_FILES["file"]["type"] == "image/gif")
 } else {
   echo "Invalid file";
 }
+																		//lägga till filnamnet i datavasen
+
+
 ?>
