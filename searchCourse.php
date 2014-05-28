@@ -14,33 +14,30 @@
 
 			$Search = mysqli_real_escape_string($con, $_POST["data"]);
 
-			$searchQuery = "SELECT kurskod FROM kurser WHERE kurskod = '$Search'";
+			$searchQuery = "SELECT kurskod, kursnamn FROM kurser WHERE kurskod = '$Search'";
 			$searchResult = mysqli_query($con, $searchQuery);
 			$arr1 = mysqli_fetch_assoc($searchResult);
-			$courses = $arr1['kurskod'];
+			$courseCode = $arr1['kurskod'];
+			$courseName = $arr1['kursnamn'];
 
-			if($Search == $courses)
+			if($Search == $courseCode || $Search == $courseName)
 			{
-				echo"Kursens kod finns!";
+				
+
+				$searchQuery = "SELECT startdatum, slutdatum FROM kurser WHERE kurskod || kursnamn = '$Search'";
+				$searchResult = mysqli_query($con, $searchQuery);
+				$arr1 = mysqli_fetch_assoc($searchResult); 
+				$courseCode = $arr1['kurskod'];
+				$courseName = $arr1['kursnamn'];
+				$courseSdate = $arr1['startdatum'];
+				$courseEdate = $arr1['slutdatum'];
+
+				echo $courseCode, $courseName, $courseSdate, $courseEdate;
+
 			}
 			else
 			{
-				echo"Kursens kod finns inte!";
-			}
-
-
-			$searchQuery = "SELECT kursnamn FROM kurser WHERE kursnamn = '$Search'";
-			$searchResult = mysqli_query($con, $searchQuery);
-			$arr2 = mysqli_fetch_assoc($searchResult);
-			$courses = $arr2['kursnamn'];
-
-			if($Search == $courses)
-			{
-				echo"Kursens namn finns!";
-			}
-			else
-			{
-				echo"Kursens namn finns inte!";
+				echo"Kursens kod/namn finns inte!";
 			}
 
 	 if (mysqli_error($con)) 

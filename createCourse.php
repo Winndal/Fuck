@@ -33,7 +33,21 @@ if(!isset($_SESSION['loggedin'])){ //SÄKERHET
 					           		window.location.href='frontpage.php';
 					          		</script>";
 				   }
+				  else
+				  {
+				  	echo "<script>
+           							alert('Create course failed! Please check that your date fields are correct.');
+					           		window.location.href='frontpage.php';
+					          		</script>";
+				  }
 				 
+				  }
+				  else
+				  {
+				  	echo "<script>
+           							alert('Create course failed! Please check that all fields are filled.');
+					           		window.location.href='frontpage.php';
+					          		</script>";
 				  }
 
 	 if (mysqli_error($con)) 
