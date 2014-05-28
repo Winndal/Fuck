@@ -15,19 +15,12 @@
 			<img src="Assets/img/icon.png" id="logga">
 				<nav class="full">
 					<ul class="menu">
-						<li><h1><a href="index.php" class="active">Start</a></h1></li>
+						<li><h1><a href="index.php">Start</a></h1></li>
 						<li><h1><a href="sign_up.php">Sign up</a></h1></li>
 						<li><h1><a href="info.php">Info</a></h1></li>
-						<li><h1><a href="donate.php">Donate</a></h1></li>
+						<li><h1><a href="donate.php" class="active">Donate</a></h1></li>
 					</ul>
 				</nav>
-				<div id="div_email_pw">
-					<form action="addLogin.php" name="loginForm" id='Login' method='POST'>
-						<input id="email" name="loginEmail" placeholder="Your email">
-						<input id="pw" type="password" name="password" placeholder="The password">
-						<input class="b_login" id="loginBtn" type='submit' name='Login' value='Login'>
-					</form>
-				</div>
 			</div>
 		</div>
 	</body>
