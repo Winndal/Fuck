@@ -39,14 +39,10 @@ if(!isset($_SESSION['loggedin'])){
  						<li><a name="myprodjects" >My Prodjects</a></li>	
  						<li><a name="msg" >Send message</a></li>
  						<li><a name="uploadbtn" onclick="return loadmeny()">Upload file</a></li>
-<<<<<<< HEAD
  						<li><a name="addCourse" onclick="return loadNewCourse()">Add course</a></li>	
-=======
- 						<li><a name="addCourse" onclick="return loadNewCourse()">Add course<a/></li>
  						<li><a name="addprodject" >Add prodject</a></li>
  						<li><a name="Q-A" >Q&A</a></li>
  						<li><a name="Report" >Report content</a></li>	
->>>>>>> abc5cc180443db4cc85e13517d8a6a7ed6a6e305
 					</ul>
  			</div>
  			</div>
