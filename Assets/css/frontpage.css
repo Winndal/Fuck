@@ -87,12 +87,13 @@ ul.menu li a{
     font-size: 16px;
 }
 #contentDiv{
-    position: relative;
+    position: absolute;
     max-width: 70%;
     left: 15%;
-    right: 15%;
+    right: calc(15% + 20px);
     border: 1px; border: solid; border-color: gray;
     min-width: 800px;
+    top: 50px;
 }
 #reklamDiv{
     position: absolute;
