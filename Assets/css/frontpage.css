@@ -23,7 +23,7 @@ p{
     height: 30px;
     border-bottom-left-radius:20px;
     border-bottom-right-radius:20px;
-    min-width: 1130px;
+    box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.75);
 }
 #mainDiv{
     position: absolute;
@@ -33,14 +33,9 @@ p{
     bottom: 100%;
 }
 #lmenu{
-    position: absolute;
-    right: calc(100% - 200px);
-    top: 70px;
-    left: 10px;
-    min-width: 200px;
-    max-width: 300px;
-    margin-right: 0px;
-    margin-top: 2px;
+    float: left;
+    margin: 10px;
+    width: 200px;
     background-color: #749C3F;
     border-radius: 20px;
     box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.75);
@@ -71,8 +66,13 @@ input.Search{
     height: 25px;
     padding: 0 16px;
     font-size: 14px;
+    border-top: 0;
+    box-shadow: 0px 3px 8px rgb(100,100,100);
     border-bottom-left-radius:20px;
     border-bottom-right-radius:20px;
+}
+input:focus{
+    outline: 0;
 }
 #menyDiv{
     position: relative;
@@ -95,14 +95,17 @@ ul.menu li a{
     font-size: 18px;
 }
 #contentDiv{
-    position: relative;
+    float: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
     max-width: 70%;
-    left: 20%;
-    right: 15%;
-    top: 43px;
+    min-width: 700px !important;
     background-color: #749C3F;
     border-radius: 20px;
     box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.75);
+}
+#contentDiv:not(:empty){
+    padding: 10px;
 }
 #reklamDiv{
     position: absolute;
@@ -162,6 +165,10 @@ ul.kurslista li a{
     font-size: 24px;
     border-bottom: 1px dashed;
 }
+#courseInfoDiv p{
+    text-align: center;
+    font-size: 13px;
+}
 #codemonkey
 {
     display: block;
@@ -175,6 +182,38 @@ ul.kurslista li a{
 #start-slut{
     position: relative;
     font-size: 16px;
+}
+ul.filelist{
+    padding: 5px;
+}
+ul.filelist li{
+
+}
+#cmenu{
+    width: 100%;
+    overflow: hidden;
+}
+#createcourse{
+    text-align: center;
+    font-size: 24px;
+    color: white;
+    border-bottom: 1px dotted;
+}
+#cName{
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px dotted; 
+    color: white;
+}
+#dName{
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px dotted; 
+    color: white;
+}
+#eName{
+    padding: 10px;
+    text-align: center;
 }
 /*#logga{
 	position:fixed;
