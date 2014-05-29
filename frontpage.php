@@ -21,7 +21,7 @@ if(!isset($_SESSION['loggedin'])){
  	<body onload="welcomepage();">
  		<img src="Assets/img/lov.jpg">
  		<div id="banner">
- 			<a>"Quote of the day: "</a>
+ 			<a>"Feel free to search, share and download files. Thank you for using UNICS."</a>
  			<form action="logout.php" name="logoutform" id='form_logout'>
 				<input id="logoutBtn" type='submit' name='Logout' value='Log Out'>
 			</form>

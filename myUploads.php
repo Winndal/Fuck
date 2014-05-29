@@ -51,13 +51,13 @@ if(!isset($_SESSION['loggedin'])){ //SÄKERHET
 		<?php
 		for($i = 0; $i < $num; $i++)
 					{
-						echo "<form method='POST' action='deleteFile.php'>";
 						echo "<div style='border-bottom: 1px dotted; padding-top: 10px; padding-bottom: 2px; color: white;'>";
+						echo "<form method='POST' action='deleteFile.php'>";
 						echo "<li style='color: black;'>" . ${'fn'.($i)} . "<br>". "<a href='Assets/upload/" . ${'sfn'.($i)} . "'>" . ${'sfn'.($i)} . "</a>" . "</li>";
 						echo "<li style='list-style-type: none; padding-bottom: 10px;'>" . "<a href='Assets/upload/" . ${'sfn'.($i)} . "' download='" . ${'sfn'.($i)} . "'>" . "Download</a>" . "</li>";
-						echo "<input id='deleteBtn' type='submit' name='Delete' value='" .  ${'fn'.($i)} . "'>";
-						echo "</div>";
+						echo "<input id='deleteBtn' type='image' src='Assets/img/delete.jpg' name='Delete' value='" .  ${'fn'.($i)} . "' alt='Submit Form'>";
 						echo"</form>";
+						echo "</div>";
 					}
 					?>
 	</body>
