@@ -32,26 +32,27 @@ if(!isset($_SESSION['loggedin'])){
  					<input type="text" name="search" placeholder="Search..." class="Search">
  				</form>
  			</div>
- 			<div id="lmenu">
- 				<div id="profile">
- 					<img id="icon" src="Assets/img/icon.png">
- 					<a href="/profile" id="href_profile"><?php echo $_SESSION['wholeName']; ?></a>
+ 			<div id="cmenu">
+ 				<div id="lmenu">
+ 					<div id="profile">
+ 						<img id="icon" src="Assets/img/icon.png">
+ 						<a href="/profile" id="href_profile"><?php echo $_SESSION['wholeName']; ?></a>
+ 					</div>
+ 					<div id="menyDiv">
+ 						<ul class="menu">
+ 							<li><a name="mycourses" >My Courses</a></li>
+ 							<li><a name="myprodjects" onclick="return buildinginprogress()">My Prodjects</a></li>
+ 							<li><a name="myuploads" >My Uploads</a></li>		
+ 							<li><a name="msg" onclick="return buildinginprogress()">Send message</a></li>
+ 							<li><a name="addCourse" onclick="return loadNewCourse()">Create a course</a></li>	
+ 							<li><a name="addprodject" onclick="return buildinginprogress()">Create a prodject</a></li>
+ 							<li><a name="uploadbtn" onclick="return loadUploadFile()">Upload file</a></li>
+ 							<li><a name="Q-A" onclick="return buildinginprogress()">Q&A</a></li>
+ 							<li><a name="Report" onclick="return buildinginprogress()">Report content</a></li>	
+						</ul>
+ 					</div>
  				</div>
- 				<div id="menyDiv">
- 					<ul class="menu">
- 						<li><a name="mycourses" >My Courses</a></li>
- 						<li><a name="myprodjects" onclick="return buildinginprogress()">My Prodjects</a></li>
- 						<li><a name="myuploads" >My Uploads</a></li>		
- 						<li><a name="msg" onclick="return buildinginprogress()">Send message</a></li>
- 						<li><a name="addCourse" onclick="return loadNewCourse()">Create a course</a></li>	
- 						<li><a name="addprodject" onclick="return buildinginprogress()">Create a prodject</a></li>
- 						<li><a name="uploadbtn" onclick="return loadUploadFile()">Upload file</a></li>
- 						<li><a name="Q-A" onclick="return buildinginprogress()">Q&A</a></li>
- 						<li><a name="Report" onclick="return buildinginprogress()">Report content</a></li>	
-					</ul>
- 			</div>
- 			</div>
- 				<div id="contentDiv"> 
+				<div id="contentDiv"></div>
  			</div>
  			<!--<div id="reklamDiv">
  				<img id="reklam" src="Assets/img/unics_reklam.jpg">

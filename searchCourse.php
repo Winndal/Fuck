@@ -107,18 +107,18 @@
 		<div id="courseInfoDiv">
 			<a id="kursnamn"> <?php echo "Name: " . $courseName;?> </a>
 			<a id="kurskod"> <?php echo "Course code: " . $courseCode;?> </a>
-			<p id="start-slut"> <?php echo "Course start date: ", $courseSdate;?> <?php echo "Course end date: ",$courseEdate;?> </p>
+			<p id="start-slut"> <?php echo "Start date: ", $courseSdate;?> <?php echo "End date: ",$courseEdate;?> </p>
 		</div>
 		<div id="fileAreaDiv">
-			<ul>
+			<ul id="filelist" style="padding-left: 0px; list-style-type: none; margin-top: 0;">
 				<?php
 					for($i = 0; $i < $num; $i++)
 					{
-						echo "<li>" . ${'fn'.($i)} . "<br>" .
-						"<a href='Assets/upload/" . ${'sfn'.($i)} . "'>" . ${'sfn'.($i)} . "</a>" .
-
-						"</li>";
-
+						echo "<div style='border-bottom: 1px dotted; padding-top: 10px; padding-bottom: 2px; color: white;'>";
+						echo "<li style='color: black;'>" . ${'fn'.($i)} . "<br>".
+						"<a href='Assets/upload/" . ${'sfn'.($i)} . "'>" . ${'sfn'.($i)} . "</a>" . "</li>";
+						echo "<li style='list-style-type: none; padding-bottom: 10px;'>" . "<a href='Assets/upload/" . ${'sfn'.($i)} . "' download='" . ${'sfn'.($i)} . "'>" . "Download</a>" . "</li>";
+						echo "</div>";
 						// echo "<li href='Assets/upload/" . ${'sfn'.($i)} . "'>" . ${'fn'.($i)} . "</a>" . "<br>";
 					}
 				?>
