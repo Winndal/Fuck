@@ -16,9 +16,9 @@ if(!isset($_SESSION['loggedin'])){
 		<link href="Assets/css/frontpage.css" rel="stylesheet">
 		<meta charset="UTF-8">
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-		<script src="Assets/js/main.js"></script> 
+		<script src="Assets/js/main.js"></script>
  	</head>
- 	<body>
+ 	<body onload="welcomepage();">
  		<img src="Assets/img/lov.jpg">
  		<div id="banner">
  			<a>"Live as if you were to die tomorrow. Learn as if you were to live forever. - Mahatma Gandhi"</a>
@@ -32,16 +32,22 @@ if(!isset($_SESSION['loggedin'])){
  					<input type="text" name="search" placeholder="Search..." class="Search">
  				</form>
  			</div>
+
+ 			<div id="myUploadsDiv name" name="myUploadsForm">
+ 				<form method="POST" name="myUploadsForm" action="myUploads.php">
+ 				</form>
+ 			</div>
+
  			<div id="lmenu">
  				<div id="profile">
  					<img id="icon" src="Assets/img/icon.png">
- 					<a href="/profile" id="href_profile"><?php echo $_SESSION['wholeName']; ?></a>
+ 					<a href="frontpage.php" id="href_profile"><?php echo $_SESSION['wholeName']; ?></a>
  				</div>
  				<div id="menyDiv">
  					<ul class="menu">
  						<li><a name="mycourses" >My Courses</a></li>
  						<li><a name="myprodjects" onclick="return buildinginprogress()">My Prodjects</a></li>
- 						<li><a name="myuploads" >My Uploads</a></li>		
+ 						<li><a name="myuploads" onclick="return loadMyUploads()">My Uploads</a></li>		
  						<li><a name="msg" onclick="return buildinginprogress()">Send message</a></li>
  						<li><a name="addCourse" onclick="return loadNewCourse()">Create a course</a></li>	
  						<li><a name="addprodject" onclick="return buildinginprogress()">Create a prodject</a></li>

@@ -34,6 +34,11 @@ function loadUploadFile()
 	$("#contentDiv").load("upload_filehtml.php");
 	
 }
+function loadMyUploads()
+{
+  $("#contentDiv").load("upload_filehtml.php");
+  
+}
   
 function loadNewCourse()
 {
@@ -56,4 +61,9 @@ $(function(){
 function buildinginprogress()
 {
   $("#contentDiv").load("buildinginprogress.php")
+}
+
+function welcomepage()
+{
+  $("#contentDiv").load("welcome.php")
 }

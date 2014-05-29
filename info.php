@@ -12,6 +12,7 @@
 		</div>
 		<div id="main">
 			<div id="div_userbox" class="bigbox">
+				<!--<p id="infoP">UniCs - A social crowdsourcing platform which enables students to search, add courses, upload and download course material.</p>-->
 			<img src="Assets/img/icon.png" id="logga">
 				<nav class="full">
 					<ul class="menu">
@@ -21,9 +22,6 @@
 						<li><h1><a href="donate.php">Donate</a></h1></li>
 					</ul>
 				</nav>
-				<div id="info_div">
-					<p>UniCs - A social crowdsourcing platform which enables students to search, add courses, upload and download course material.</p>
-				</div>
 			</div>
 		</div>
 	</body>

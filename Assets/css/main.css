@@ -129,7 +129,22 @@ input{
 	bottom: 10px;
 	left: 10px;
 }
-/*#C63D0F 	red
-#3B3738		svart
-#FDF3E7		vit
-#7E8F7C		grön/grå	*/
+
+#donateForm
+{
+	
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	
+	
+}
+#donateForm input
+{
+	padding-top: 60px;
+	display: block;
+	margin: auto auto;
+	width: 100px;
+}
