@@ -49,7 +49,7 @@ function loadSearch()
   var data = {
     data: document.forms["searchForm"]["search"].value
   };
-  $("#contentDiv").load("searchCourse.php", data);
+  $("#contentDiv").load("searchCourse.php", data); 
   return false;
 }
 
