@@ -32,9 +32,11 @@ if(!isset($_SESSION['loggedin'])){
  					<input type="text" name="search" placeholder="Search..." class="Search">
  				</form>
  			</div>
- 			<div id="profile">
- 				<img id="icon" src="Assets/img/icon.png">
- 				<a href="/profile" id="href_profile"><?php echo $_SESSION['wholeName']; ?></a>
+ 			<div id="lmenu">
+ 				<div id="profile">
+ 					<img id="icon" src="Assets/img/icon.png">
+ 					<a href="/profile" id="href_profile"><?php echo $_SESSION['wholeName']; ?></a>
+ 				</div>
  				<div id="menyDiv">
  					<ul class="menu">
  						<li><a name="mycourses" >My Courses</a></li>

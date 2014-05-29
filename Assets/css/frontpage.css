@@ -32,7 +32,7 @@ p{
     right: 10%;
     bottom: 100%;
 }
-#profile{
+#lmenu{
     position: absolute;
     right: calc(100% - 200px);
     top: 70px;
@@ -44,6 +44,11 @@ p{
     background-color: #749C3F;
     border-radius: 20px;
     box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.75);
+}
+#profile{
+    padding: 7px;
+    border-bottom: 1px dotted;
+    color: white; 
 }
 #href_profile{
     position: absolute;
@@ -96,9 +101,8 @@ ul.menu li a{
     right: 15%;
     top: 43px;
     background-color: #749C3F;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.75);
 }
 #reklamDiv{
     position: absolute;
@@ -156,6 +160,7 @@ ul.kurslista li a{
     color: white;
     padding: 10px;
     font-size: 24px;
+    border-bottom: 1px dashed;
 }
 #codemonkey
 {
@@ -167,8 +172,9 @@ ul.kurslista li a{
 #kurskod{
     float: right;  
 }
-#start , #slut{
+#start-slut{
     position: relative;
+    font-size: 16px;
 }
 /*#logga{
 	position:fixed;

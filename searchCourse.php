@@ -106,9 +106,8 @@
 	<body>
 		<div id="courseInfoDiv">
 			<a id="kursnamn"> <?php echo "Name: " . $courseName;?> </a>
-			<a id="kurskod"> <?php echo "Course code: " . $courseCode . "<br>";?> </a>
-			<a id="start"> <?php echo "Course start date: ", $courseSdate;?> </a>
-			<a id="slut"> <?php echo "Course end date: ",$courseEdate;?> </a>
+			<a id="kurskod"> <?php echo "Course code: " . $courseCode;?> </a>
+			<p id="start-slut"> <?php echo "Course start date: ", $courseSdate;?> <?php echo "Course end date: ",$courseEdate;?> </p>
 		</div>
 		<div id="fileAreaDiv">
 			<ul>
