@@ -24,16 +24,14 @@ if(isset($_POST["filnamn"]) && ($_POST["kurskod"]))
 		$email = $_SESSION['email'];
 
 		if ($_FILES["file"]["error"] > 0) {                     
-			echo "Error: " . $_FILES["file"]["error"] . "<br>"; 
+			//echo "Error: " . $_FILES["file"]["error"] . "<br>";
+			echo "<script>
+           alert('Please choose a file!');
+           window.location.href='frontpage.php';
+          </script>";
+          die(); 
 			} 
-			else
-			{
-			  echo "Upload: " . $_FILES["file"]["name"] . "<br>";
-			  echo "Type: " . $_FILES["file"]["type"] . "<br>";
-			  echo "Size: " . ($_FILES["file"]["size"] / 1024) . " kB<br>";
-			  echo "Stored in: " . $_FILES["file"]["tmp_name"];
-			}
-			
+
 			$allowedExts = array("gif", "jpeg", "jpg", "png", "doc", "odt", "pdf", "txt"); // accepterade filer för stunden 
 			$temp = explode(".", $_FILES["file"]["name"]);
 			$extension = end($temp);
@@ -53,19 +51,21 @@ if(isset($_POST["filnamn"]) && ($_POST["kurskod"]))
 			{
 			  	if ($_FILES["file"]["error"] > 0) 
 			  	{
-			    	echo "Error: " . $_FILES["file"]["error"] . "<br>";
+			    	//echo "Error: " . $_FILES["file"]["error"] . "<br>";
+			    	echo "<script>
+			           alert('File upload failed! Check the file format and file size.');
+			           window.location.href='frontpage.php';
+			          </script>"; 
+			          die();
 			  	} 
-			  	else 
-			  	{
-			    	echo "Upload: " . $_FILES["file"]["name"] . "<br>";
-			    	echo "Type: " . $_FILES["file"]["type"] . "<br>";
-			    	echo "Size: " . ($_FILES["file"]["size"] / 1024) . " kB<br>";
-			    	echo "Stored in: " . $_FILES["file"]["tmp_name"];
-			  	}
 			} 
 			else 
 			{
-			  	echo "Invalid file";
+			  		echo "<script>
+			           alert('File upload failed! Check the file format and file size.');
+			           window.location.href='frontpage.php';
+			          </script>"; 
+			          die();
 			}
 			
 			$allowedExts = array("gif", "jpeg", "jpg", "png", "doc", "odt", "pdf", "txt");
@@ -87,14 +87,14 @@ if(isset($_POST["filnamn"]) && ($_POST["kurskod"]))
 			{
 			if ($_FILES["file"]["error"] > 0) 
 			{
-			    echo "Return Code: " . $_FILES["file"]["error"] . "<br>";
+			    //echo "Return Code: " . $_FILES["file"]["error"] . "<br>";
+			    	echo "<script>
+			           alert('File upload failed! Check the file format and file size.');
+			           window.location.href='frontpage.php';
+			          </script>"; 
+			          die();
 			} 
-			else 
-			{
-			    echo "Upload: " . $_FILES["file"]["name"] . "<br>";
-			    echo "Type: " . $_FILES["file"]["type"] . "<br>";
-			    echo "Size: " . ($_FILES["file"]["size"] / 1024) . " kB<br>";
-			    echo "Temp file: " . $_FILES["file"]["tmp_name"] . "<br>";
+			
 			    if (file_exists("Assets/upload/" . $_FILES["file"]["type"])) 
 			    {
 			      echo $_FILES["file"]["name"] . " already exists. ";
@@ -114,23 +114,21 @@ if(isset($_POST["filnamn"]) && ($_POST["kurskod"]))
  					if($query)
       				{
           				echo "<script>
-           				alert('Sucsess!');
+           				alert('Success!');
            				window.location.href='frontpage.php';
           				</script>";
       				}
     			}
-			}} 
-			else 
-			{
-			  echo "Invalid file";
 			}
+		} 
+		else 
+		{
+		  	echo "<script>
+		           alert('File upload failed! Check the file format and file size.');
+		           window.location.href='frontpage.php';
+		          </script>"; 
+		          die();
 		}
-else
-{
-	echo "<script>
-	alert('Correct form example File name (statistics 7,5 hp exam) Course code (UU-74638)');
-	window.location.href='frontpage.php';
-	</script>";
-}																		//lägga till filnamnet i datavasen
+																		
 			
 ?>

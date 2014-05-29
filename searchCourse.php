@@ -63,12 +63,25 @@
 				die();
 			}
 
-	 if (mysqli_error($con)) 
- 		{
-  			die (mysqli_error ($con));//die avbryter preocessen
- 		}
 
- 	mysqli_close($con); 
+		 	$fileQuery = "SELECT * FROM filer WHERE kurskod = '$courseCode'";
+			$fileQueryResult = mysqli_query($con, $fileQuery);
+			$num = 0;
+
+			while ($row = mysqli_fetch_assoc($fileQueryResult)) 
+			{	
+    		${'fn'.($num)} = $row['filnamn'];
+			${'sfn'.($num)} = $row['sparatfilnamn'];
+			$num++;
+			}
+			 
+			if (mysqli_error($con)) 
+		 	{
+		  		die (mysqli_error ($con));//die avbryter preocessen
+		 	}
+		 	
+		 	mysqli_close($con);
+	 
  		
 	}
 	else
@@ -80,6 +93,7 @@
 
           die();
 	}
+
 
 ?>
 
@@ -93,6 +107,15 @@
 		<p> <?php echo "Course name: ", $courseName, ".";?> </p>
 		<p> <?php echo "Course start date: ", $courseSdate, ".";?> </p>
 		<p> <?php echo "Course end date: ",$courseEdate, ".";?> </p>
+	</div>
+
+	<div>
+		<?php
+			for($i = 0; $i < $num; $i++)
+			{
+				echo "<a href='Assets/upload/" . ${'sfn'.($i)} . "'>" . ${'fn'.($i)} . "</a>";
+			}
+		?>
 	</div>
 </body>
 </html>
