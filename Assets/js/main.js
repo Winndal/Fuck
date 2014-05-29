@@ -54,3 +54,7 @@ $(function(){
   // när man klickar på serach, kör finltion loadSearch
   $("#searchDiv form").submit(loadSearch);
 });
+function buildinginprogress()
+{
+  $("#contentDiv").load("buildinginprogress.php")
+}
