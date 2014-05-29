@@ -49,8 +49,7 @@ if(!isset($_SESSION['loggedin'])){
 					</ul>
  			</div>
  			</div>
- 			<br><br><br><div id="contentDiv"> 
- 				<p>CONTENT</p>
+ 				<div id="contentDiv"> 
  			</div>
  			<!--<div id="reklamDiv">
  				<img id="reklam" src="Assets/img/unics_reklam.jpg">

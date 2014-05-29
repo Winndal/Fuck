@@ -98,24 +98,32 @@
 ?>
 
 <html>
-<head>
-	<link href="Assets/css/courseInfo.css" rel="stylesheet">
-</head>
-<body>
-	<div id="courseInfoDiv">
-		<p> <?php echo "Course code: ", $courseCode, ".";?> </p>
-		<p> <?php echo "Course name: ", $courseName, ".";?> </p>
-		<p> <?php echo "Course start date: ", $courseSdate, ".";?> </p>
-		<p> <?php echo "Course end date: ",$courseEdate, ".";?> </p>
-	</div>
+	<head>
+		<meta charset="UTF-8">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="Assets/js/main.js"></script> 
+	</head>
+	<body>
+		<div id="courseInfoDiv">
+			<a id="kursnamn"> <?php echo "Name: " . $courseName;?> </a>
+			<a id="kurskod"> <?php echo "Course code: " . $courseCode . "<br>";?> </a>
+			<a id="start"> <?php echo "Course start date: ", $courseSdate;?> </a>
+			<a id="slut"> <?php echo "Course end date: ",$courseEdate;?> </a>
+		</div>
+		<div id="fileAreaDiv">
+			<ul>
+				<?php
+					for($i = 0; $i < $num; $i++)
+					{
+						echo "<li>" . ${'fn'.($i)} . "<br>" .
+						"<a href='Assets/upload/" . ${'sfn'.($i)} . "'>" . ${'sfn'.($i)} . "</a>" .
 
-	<div>
-		<?php
-			for($i = 0; $i < $num; $i++)
-			{
-				echo "<a href='Assets/upload/" . ${'sfn'.($i)} . "'>" . ${'fn'.($i)} . "</a>" . "<br>";
-			}
-		?>
-	</div>
+						"</li>";
+
+						// echo "<li href='Assets/upload/" . ${'sfn'.($i)} . "'>" . ${'fn'.($i)} . "</a>" . "<br>";
+					}
+				?>
+			</ul>
+		</div>
 </body>
 </html>
