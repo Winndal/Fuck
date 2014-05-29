@@ -1,5 +1,5 @@
-<?php 													// ((felhantering )) // hela phpn är direkt lånad från w3Schools //
-														// den globala php arrayen $_Files möjliggör en uppladnning från client till server
+<?php 													
+												
 session_start();
 if(!isset($_SESSION['loggedin'])){
 		echo "<script>
@@ -7,9 +7,8 @@ if(!isset($_SESSION['loggedin'])){
            window.location.href='index.php';
           </script>";
       }
-      //var_dump($_POST["filnamn"]);
-      //var_dump($_POST["kurskod"]);
-      //die();
+      
+
 
 if(isset($_POST["filnamn"]) && ($_POST["kurskod"]))
 	{
@@ -18,6 +17,23 @@ if(isset($_POST["filnamn"]) && ($_POST["kurskod"]))
 				  {
  				   echo "Failed to connect to MySQL: " . mysqli_connect_error();
 				  }
+
+
+
+				  //Query och if som kontrollerar om en specificerad kurskod finns för uppladdning av fil.
+		$postCourseCode = $_POST["kurskod"];		  
+		$ifQuery = "SELECT kurskod FROM kurser WHERE kurskod = '$postCourseCode'";
+					$ifResult = mysqli_query($con, $ifQuery);
+					$arr1 = mysqli_fetch_assoc($ifResult);
+					$courseCode =  $arr1['kurskod'];
+					
+					if(strlen($courseCode) === 0)
+						{ 
+							echo "<script>
+           					alert('The specified course code does not exist!');
+          					window.location.href='frontpage.php';
+         				 	</script>";
+						} 
 
 		$filnamn = mysqli_real_escape_string($con, $_POST["filnamn"]);
 		$kurskod = mysqli_real_escape_string($con,$_POST["kurskod"]);
