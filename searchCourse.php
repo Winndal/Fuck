@@ -113,7 +113,7 @@
 		<?php
 			for($i = 0; $i < $num; $i++)
 			{
-				echo "<a href='Assets/upload/" . ${'sfn'.($i)} . "'>" . ${'fn'.($i)} . "</a>";
+				echo "<a href='Assets/upload/" . ${'sfn'.($i)} . "'>" . ${'fn'.($i)} . "</a>" . "<br>";
 			}
 		?>
 	</div>
