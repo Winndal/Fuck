@@ -1,7 +1,7 @@
 <?php    
 	if(isset($_POST["Fname"]))
 	{
-		
+
 			$con = mysqli_connect('localhost','root','','unics');
 	
 		     if (mysqli_connect_errno()) 
