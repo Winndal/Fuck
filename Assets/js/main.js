@@ -36,8 +36,7 @@ function loadUploadFile()
 }
 function loadMyUploads()
 {
-  $("#contentDiv").load("upload_filehtml.php");
-  
+  $("#contentDiv").load("myUploads.php");
 }
   
 function loadNewCourse()

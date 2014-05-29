@@ -42,7 +42,7 @@ if(!isset($_SESSION['loggedin'])){
  						<ul class="menu">
  							<li><a name="mycourses" >My Courses</a></li>
  							<li><a name="myprodjects" onclick="return buildinginprogress()">My Prodjects</a></li>
- 							<li><a name="myuploads" >My Uploads</a></li>		
+ 							<li><a name="myuploads" onclick="loadMyUploads()">My Uploads</a></li>		
  							<li><a name="msg" onclick="return buildinginprogress()">Send message</a></li>
  							<li><a name="addCourse" onclick="return loadNewCourse()">Create a course</a></li>	
  							<li><a name="addprodject" onclick="return buildinginprogress()">Create a prodject</a></li>

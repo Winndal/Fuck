@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <?php session_start();
 	
 
@@ -8,8 +9,6 @@ if(!isset($_SESSION['loggedin'])){ //SÄKERHET
           </script>";
       }
 
-	if(isset($_POST["kurskod"]))
-	{
 
 			$con = mysqli_connect('localhost','root','','unics');
 	
@@ -24,6 +23,7 @@ if(!isset($_SESSION['loggedin'])){ //SÄKERHET
 
 				$fileQuery = "SELECT * FROM filer WHERE email = '$userEmail'";
 				$fileQueryResult = mysqli_query($con, $fileQuery);
+
 				$num = 0;
 
 				while ($row = mysqli_fetch_assoc($fileQueryResult)) 
@@ -32,17 +32,33 @@ if(!isset($_SESSION['loggedin'])){ //SÄKERHET
 				${'sfn'.($num)} = $row['sparatfilnamn'];
 				$num++;
 				}
-			 
-
-
+			 	
 
 	 if (mysqli_error($con)) 
  		{
   			die (mysqli_error ($con));//die avbryter preocessen
  		}
 
- 	mysqli_close($con); 
- 	
-	}
+ 	mysqli_close($con);
+ 
 
 ?>
+
+<html>
+	<head>
+	</head>
+	<body>
+		<?php
+		for($i = 0; $i < $num; $i++)
+					{
+						echo "<form method='POST' action='deleteFile.php'>";
+						echo "<div style='border-bottom: 1px dotted; padding-top: 10px; padding-bottom: 2px; color: white;'>";
+						echo "<li style='color: black;'>" . ${'fn'.($i)} . "<br>". "<a href='Assets/upload/" . ${'sfn'.($i)} . "'>" . ${'sfn'.($i)} . "</a>" . "</li>";
+						echo "<li style='list-style-type: none; padding-bottom: 10px;'>" . "<a href='Assets/upload/" . ${'sfn'.($i)} . "' download='" . ${'sfn'.($i)} . "'>" . "Download</a>" . "</li>";
+						echo "<input id='deleteBtn' type='submit' name='Delete' value='" .  ${'fn'.($i)} . "'>";
+						echo "</div>";
+						echo"</form>";
+					}
+					?>
+	</body>
+</html>
