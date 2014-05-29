@@ -49,7 +49,7 @@ if(!isset($_SESSION['loggedin'])){
 					</ul>
  			</div>
  			</div>
- 			<div id="contentDiv"> 
+ 			<br><br><br><div id="contentDiv"> 
  				<p>CONTENT</p>
  			</div>
  			<!--<div id="reklamDiv">

@@ -32,7 +32,7 @@ if(isset($_POST["filnamn"]) && ($_POST["kurskod"]))
           die(); 
 			} 
 
-			$allowedExts = array("gif", "jpeg", "jpg", "png", "doc", "odt", "pdf", "txt"); // accepterade filer för stunden 
+			$allowedExts = array("gif", "jpeg", "jpg", "png", "pdf"); // accepterade filer för stunden 
 			$temp = explode(".", $_FILES["file"]["name"]);
 			$extension = end($temp);
 			
@@ -42,9 +42,6 @@ if(isset($_POST["filnamn"]) && ($_POST["kurskod"]))
 			|| ($_FILES["file"]["type"] == "image/pjpeg")
 			|| ($_FILES["file"]["type"] == "image/x-png")
 			|| ($_FILES["file"]["type"] == "application/pdf")
-			|| ($_FILES["file"]["type"] == "application/txt")
-			|| ($_FILES["file"]["type"] == "application/doc")
-			|| ($_FILES["file"]["type"] == "application/odt")
 			|| ($_FILES["file"]["type"] == "image/png"))
 			&& ($_FILES["file"]["size"] < 8388608)
 			&& in_array($extension, $allowedExts))
@@ -68,7 +65,7 @@ if(isset($_POST["filnamn"]) && ($_POST["kurskod"]))
 			          die();
 			}
 			
-			$allowedExts = array("gif", "jpeg", "jpg", "png", "doc", "odt", "pdf", "txt");
+			$allowedExts = array("gif", "jpeg", "jpg", "png", "pdf");
 			$temp = explode(".", $_FILES["file"]["name"]);
 			$extension = end($temp);
 			
@@ -78,9 +75,6 @@ if(isset($_POST["filnamn"]) && ($_POST["kurskod"]))
 			|| ($_FILES["file"]["type"] == "image/pjpeg")
 			|| ($_FILES["file"]["type"] == "image/x-png")
 			|| ($_FILES["file"]["type"] == "application/pdf")
-			|| ($_FILES["file"]["type"] == "application/txt")
-			|| ($_FILES["file"]["type"] == "application/doc")
-			|| ($_FILES["file"]["type"] == "application/odt")
 			|| ($_FILES["file"]["type"] == "image/png"))
 			&& ($_FILES["file"]["size"] < 8388608)
 			&& in_array($extension, $allowedExts)) 
