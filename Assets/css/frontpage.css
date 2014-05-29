@@ -98,12 +98,14 @@ ul.menu li a{
     float: left;
     margin-top: 10px;
     margin-bottom: 10px;
-    padding: 10px;
     max-width: 70%;
     min-width: 700px !important;
     background-color: #749C3F;
     border-radius: 20px;
     box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.75);
+}
+#contentDiv:not(:empty){
+    padding: 10px;
 }
 #reklamDiv{
     position: absolute;
@@ -162,6 +164,10 @@ ul.kurslista li a{
     padding: 10px;
     font-size: 24px;
     border-bottom: 1px dashed;
+}
+#courseInfoDiv p{
+    text-align: center;
+    font-size: 13px;
 }
 #codemonkey
 {
