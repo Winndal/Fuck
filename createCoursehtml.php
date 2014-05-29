@@ -19,13 +19,13 @@ if(!isset($_SESSION['loggedin'])){
  		</div>	
  		<form action="createCourse.php" method="POST" id="createForm">
  			<div id="cName">
- 				<input type="text" name="kursnamn" id="Kursnamn" placeholder="Course name...">
- 				<input type="text" name="kurskod" id="Kurskod" placeholder="Course code..."><br>
+ 				<input type="text" name="kursnamn" id="Kursnamn" placeholder="Course name..." autocomplete="off">
+ 				<input type="text" name="kurskod" id="Kurskod" placeholder="Course code..." autocomplete="off"><br>
 			</div>
 			<div id="dName">
- 				<label>Please note that you have to write the dates in the following form: YYYY-MM-DD.</label><br>
- 				<input type="text" name="startdatum" id="Startdatum" placeholder="Course start date...">
- 				<input type="text" name="slutdatum" id="Slutdatum" placeholder="Course end date...">
+ 				<p>Please note, you have to write the dates in the following format: YYYY-MM-DD</p>
+ 				<input type="text" name="startdatum" id="Startdatum" placeholder="Course start..." autocomplete="off">
+ 				<input type="text" name="slutdatum" id="Slutdatum" placeholder="Course end..." autocomplete="off">
  			</div>
  			<div id="eName">
  				<input type="submit" name="skapakurs" id="skapaKurs" value="Create">

@@ -211,9 +211,29 @@ ul.filelist li{
     border-bottom: 1px dotted; 
     color: white;
 }
+#dName p{
+    padding-bottom: 10px;
+}
 #eName{
     padding: 10px;
-    text-align: center;
+    padding-bottom: 0;
+    padding-right: 0;
+    text-align: right;
+}
+#contentDiv input{
+    padding: 0 8px;
+    width: 150px;
+    height: 30px;
+    border-radius: 20px;
+    border: 0;
+    color: #749C3F;
+    background-color: white;
+}
+#eName input{
+    font-size: 20px;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0;
+
 }
 /*#logga{
 	position:fixed;

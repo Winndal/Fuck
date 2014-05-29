@@ -21,7 +21,7 @@ if(!isset($_SESSION['loggedin'])){
  	<body onload="welcomepage();">
  		<img src="Assets/img/lov.jpg">
  		<div id="banner">
- 			<a>"Live as if you were to die tomorrow. Learn as if you were to live forever. - Mahatma Gandhi"</a>
+ 			<a>"Quote of the day: "</a>
  			<form action="logout.php" name="logoutform" id='form_logout'>
 				<input id="logoutBtn" type='submit' name='Logout' value='Log Out'>
 			</form>
@@ -29,14 +29,14 @@ if(!isset($_SESSION['loggedin'])){
  		<div id="mainDiv">
  			<div id="searchDiv">
  				<form method="POST" name="searchForm">
- 					<input type="text" name="search" placeholder="Search..." class="Search">
+ 					<input type="text" name="search" placeholder="Search..." class="Search" autocomplete="off">
  				</form>
  			</div>
  			<div id="cmenu">
  				<div id="lmenu">
  					<div id="profile">
  						<img id="icon" src="Assets/img/icon.png">
- 						<a href="/profile" id="href_profile"><?php echo $_SESSION['wholeName']; ?></a>
+ 						<a href="frontpage.php" id="href_profile"><?php echo $_SESSION['wholeName']; ?></a>
  					</div>
  					<div id="menyDiv">
  						<ul class="menu">
