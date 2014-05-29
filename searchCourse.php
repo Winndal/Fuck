@@ -56,7 +56,11 @@
 			}
 			else
 			{
-				echo"Kursens kod/namn finns inte!";
+				echo "<script>
+           alert('The course name or code does not exist!');
+           window.location.href='frontpage.php';
+          </script>";
+				die();
 			}
 
 	 if (mysqli_error($con)) 

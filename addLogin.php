@@ -18,9 +18,6 @@
 			$passwordResult = mysqli_query($con, $passwordQuery); //Skickar query
 			$arr1 = mysqli_fetch_assoc($passwordResult); //Hämtar tabellen
 			$savedPassword = $arr1['password']; //Sätter saved till password i assoc arrayen.
-			
-			$mellanrum = " ";
-			$wholeName = $arr1['fnamn'] .= $mellanrum .= $arr1['enamn'];
 
 
 			$saltQuery = "SELECT salt FROM medlemmar WHERE email = '$loginEmail'"; //Saltet från databasen
@@ -32,17 +29,24 @@
 
 			if($inputPassword == $savedPassword) //Kontrollera om lösenorden matchar, isf skapa session, annars avbryt.
 			  {
-						$_SESSION ['email']=$loginEmail;
-						$_SESSION ['wholeName']=$wholeName;
-						$_SESSION ['loggedin'] = 'true';
-						header("location: frontpage.php");
+
+						$mellanrum = " ";
+						$wholeName = $arr1['fnamn'] .= $mellanrum .= $arr1['enamn'];
+
+							$_SESSION ['email']=$loginEmail;
+							$_SESSION ['wholeName']=$wholeName;
+							$_SESSION ['loggedin'] = 'true';
+							header("location: frontpage.php");
 			  }
 			  else
 			  {
+
 			  	echo "<script>
            		alert('You have entered wrong email or password, please try again!');
            		window.location.href='index.php';
           		</script>";
+
+
 			  }
 
 
