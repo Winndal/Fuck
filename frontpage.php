@@ -37,12 +37,13 @@ if(!isset($_SESSION['loggedin'])){
  				<a href="/profile" id="href_profile"><?php echo $_SESSION['wholeName']; ?></a>
  				<div id="menyDiv">
  					<ul class="menu">
- 						<li><a name="mycourses" >My Courses</a></li>
- 						<li><a name="myprodjects" >My Prodjects</a></li>	
+ 						<li><a name="mycourses" onclick="return loadNewCourse()">My Courses</a></li>
+ 						<li><a name="myprodjects" >My Prodjects</a></li>
+ 						<li><a name="myuploads" >My Uploads</a></li>		
  						<li><a name="msg" >Send message</a></li>
  						<li><a name="addCourse" onclick="return loadNewCourse()">Create a course</a></li>	
  						<li><a name="addprodject" >Create a prodject</a></li>
- 						<li><a name="uploadbtn" onclick="return loadmeny()">Upload file</a></li>
+ 						<li><a name="uploadbtn" onclick="return loadUploadFile()">Upload file</a></li>
  						<li><a name="Q-A" >Q&A</a></li>
  						<li><a name="Report" >Report content</a></li>	
 					</ul>

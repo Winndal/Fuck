@@ -29,9 +29,9 @@ function validateRegister()
   }
 }
 
-function loadmeny()
+function loadUploadFile()
 {
-	$("#contentDiv").load("kursvy.php");
+	$("#contentDiv").load("upload_filehtml.php");
 	
 }
   

@@ -50,7 +50,8 @@ p{
     float: left;
     text-decoration: none;
     color: #3B3738;
-    font-size: 17px;
+    font-size: 20px;
+    color: white;
 }
 #searchDiv{
     position: absolute;
@@ -74,7 +75,6 @@ input.Search{
 }
 ul.menu a{
     padding-top: 1px;
-
 }
 ul.menu li.active ul{
     display: block;
@@ -86,8 +86,8 @@ ul.menu{
 ul.menu li a{
     cursor: pointer;
     text-decoration: none;
-    color: #3B3738;
-    font-size: 16px;
+    color: white;
+    font-size: 18px;
 }
 #contentDiv{
     position: relative;
