@@ -6,7 +6,6 @@ body{
     font-variant: normal;
     font-weight: normal;
     line-height: 1.231;
-    background: url(Assets/img/lov.jpg) auto auto no-repeat;
 }
 p{
     margin:0;
@@ -263,8 +262,3 @@ ul.filelist li{
     color: white; 
     text-align:center;
 }
-/*#logga{
-	position:fixed;
-	top:5px;
-	right:415px;
-}*/
