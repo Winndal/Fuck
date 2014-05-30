@@ -1,4 +1,4 @@
-html, body{
+html, body{   
     min-width: 1400px;
 }
 body{
@@ -9,6 +9,7 @@ body{
     font-variant: normal;
     font-weight: normal;
     line-height: 1.231;
+    background: url(Assets/img/lov.jpg) auto auto no-repeat;
 }
 p{
     margin:0;
@@ -34,7 +35,7 @@ p{
 }
 #lmenu{
     float: left;
-    margin: 10px;
+    margin-left: 120px;
     width: 200px;
     background-color: #749C3F;
     border-radius: 20px;
@@ -96,8 +97,7 @@ ul.menu li a{
 }
 #contentDiv{
     float: left;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-left: 35px;
     max-width: 70%;
     min-width: 700px !important;
     background-color: #749C3F;
@@ -108,16 +108,9 @@ ul.menu li a{
     padding: 10px;
 }
 #reklamDiv{
-    position: absolute;
-    top: 65px; 
-    right: -800px; 
-    bottom: 0; 
-    left: 0px;
-    max-width: 185px;
-    margin-left:auto;
-    margin-right:auto;
-}
-#reklam{
+    float: left;
+    margin-left: 35px;
+    height: 160px;
     box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.75);
     border: 1px solid; 
 }
@@ -176,6 +169,11 @@ ul.kurslista li a{
     padding-bottom: 20px; 
     padding-top: 20px;
 }
+#codemonkey_welcome
+{
+    padding-bottom: 20px; 
+    padding-top: 20px;
+}
 #kurskod{
     float: right;  
 }
@@ -192,8 +190,10 @@ ul.filelist li{
 #cmenu{
     width: 100%;
     overflow: hidden;
+    margin-top: 20px;
 }
 #createcourse{
+    padding: 9px;
     text-align: center;
     font-size: 24px;
     color: white;
@@ -233,7 +233,32 @@ ul.filelist li{
     font-size: 20px;
     border-top-right-radius: 0;
     border-bottom-left-radius: 0;
-
+}
+#no{
+    border-bottom: 1px dotted; 
+    color: white;
+}
+#no input{
+    width: auto;
+    height: auto;
+    padding: 0;
+    border-radius: 0;
+    color: inherit;
+    background-color: inherit;
+}
+#uploadDiv p{
+    padding: 10px;
+    border-bottom: 1px dotted; 
+    color: white;
+}
+#bigtext{
+    font-size: 24px;
+    text-align: center;
+    padding: 0 !important;
+}
+#welcome{
+    color: white; 
+    text-align:center;
 }
 /*#logga{
 	position:fixed;

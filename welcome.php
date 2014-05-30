@@ -15,14 +15,16 @@ if(!isset($_SESSION['loggedin'])){
 <html>
 	<head>
 	</head>
-
 	<body>
-		<div style="color: white; text-align:center;">
-			<p style="font-size:250%; ">Welcome to UNICS!</p>
-			<p>Please note that this site is under construction and not all functionability has been implemented.</p>
-			<p>At the moment you can search for courses and course codes, create a course and add files to that or already existing courses.</p>
-				
-			</p>
+		<div id="welcome">
+			<div id="createcourse">
+				<p id="bigtext">Welcome to UNICS!</p>
+			</div>
+			<div id="cName">
+				<p>Please note that this site is under construction and not all functionability has been implemented.</p>
+				<p>At the moment you can search for courses and course codes, create a course and add files to that or already existing courses.</p>
+			</div>	
+			<img src="Assets/img/codemonkey_welcome.png" id="codemonkey_welcome">
 		</div>
 	</body>
 </html>

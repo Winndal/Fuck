@@ -17,14 +17,22 @@ if(!isset($_SESSION['loggedin'])){
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script src="Assets/js/main.js"></script> 
  	</head>
- 	<body> 
+ 	<body>
+		<div id="createcourse">
+			<p id="bigtext">Upload file</p>
+		</div>
  		<form action="upload_file.php" method="post" enctype="multipart/form-data">
-			<label for="file">File name:</label><br>
-			<input type="file" name="file" id="file"><br>
-			<input type="text" name="filnamn" id="f1" placeholder="File name..."><br>
-			<input type="text" name="kurskod" id="f1" placeholder="Course code..."><br>
-			<input type="submit" name="submit" value="Upload">
-		</form>	
- </body>
+			<div id="no">
+				<p><input type="file" name="file" id="file"></p>
+			</div>
+			<div id="dName">
+				<input type="text" name="filnamn" id="f1" placeholder="File name...">
+				<input type="text" name="kurskod" id="f1" placeholder="Course code...">
+			</div>
+			<div id="eName">
+				<input type="submit" name="submit" value="Upload">
+			</div>
+		</form>
+ 	</body>
 </html>
 

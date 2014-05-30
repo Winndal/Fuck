@@ -19,7 +19,6 @@ if(!isset($_SESSION['loggedin'])){
 		<script src="Assets/js/main.js"></script>
  	</head>
  	<body onload="welcomepage();">
- 		<img src="Assets/img/lov.jpg">
  		<div id="banner">
  			<a>"Feel free to search, share and download files. Thank you for using UNICS."</a>
  			<form action="logout.php" name="logoutform" id='form_logout'>
@@ -41,22 +40,27 @@ if(!isset($_SESSION['loggedin'])){
  					<div id="menyDiv">
  						<ul class="menu">
  							<li><a name="mycourses" >My Courses</a></li>
- 							<li><a name="myprodjects" onclick="return buildinginprogress()">My Prodjects</a></li>
- 							<li><a name="myuploads" onclick="loadMyUploads()">My Uploads</a></li>		
+ 							<li><a name="myprojects" onclick="return buildinginprogress()">My Projects</a></li>
+ 							<li><a name="myuploads" onclick="loadMyUploads()">My Uploads</a></li>
+ 							<li><br></li>		
  							<li><a name="msg" onclick="return buildinginprogress()">Send message</a></li>
+ 							<li><br></li>	
  							<li><a name="addCourse" onclick="return loadNewCourse()">Create a course</a></li>	
- 							<li><a name="addprodject" onclick="return buildinginprogress()">Create a prodject</a></li>
+ 							<li><a name="addproject" onclick="return buildinginprogress()">Create a project</a></li>
  							<li><a name="uploadbtn" onclick="return loadUploadFile()">Upload file</a></li>
+ 							<li><br></li>	
  							<li><a name="Q-A" onclick="return buildinginprogress()">Q&A</a></li>
- 							<li><a name="Report" onclick="return buildinginprogress()">Report content</a></li>	
+ 							<li><a name="Report" onclick="return buildinginprogress()">Report content</a></li>
+ 							<li><br></li>
+ 							<li><a name="unicsTut" onclick="return buildinginprogress()">Unics Tutoring</a></li>			
 						</ul>
  					</div>
  				</div>
 				<div id="contentDiv"></div>
+ 			<div id="reklamDiv">
+ 				<a href="http://www.adlibris.se" id="reklam"><img src="Assets/img/unics_reklam.jpg"></a>
  			</div>
- 			<!--<div id="reklamDiv">
- 				<img id="reklam" src="Assets/img/unics_reklam.jpg">
- 			</div>-->
+ 			</div>
  		</div>
  	</body>
 </html>
