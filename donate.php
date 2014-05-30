@@ -25,7 +25,7 @@
 					<ul class="menu">
 						<li><h1><a href="index.php">Start</a></h1></li>
 						<li><h1><a href="sign_up.php">Sign up</a></h1></li>
-						<li><h1><a href="info.php">Info</a></h1></li>
+						<!--<li><h1><a href="info.php">Info</a></h1></li>-->
 						<li><h1><a href="donate.php" class="active">Donate</a></h1></li>
 					</ul>
 				</nav>
