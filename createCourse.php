@@ -25,8 +25,13 @@ if(!isset($_SESSION['loggedin'])){ //SÄKERHET
 
 				  if(isset($courseName) && isset($courseCode) && isset($startDate) && isset($endDate)){
 				  		if(strlen($startDate) === 10 && strlen($endDate) === 10){
-				  				  $courseQuery = "INSERT INTO kurser(kursnamn, kurskod, startdatum, slutdatum) VALUES ('$courseName', '$courseCode', '$startDate', '$endDate')";
+				  				  
+				  				  	$courseQuery = "INSERT INTO kurser(kursnamn, kurskod, startdatum, slutdatum) VALUES ('$courseName', '$courseCode', '$startDate', '$endDate')";
 				   					mysqli_query($con,$courseQuery);
+
+				   					$userEmail=$_SESSION['email'];
+				   					$userCourseQuery="INSERT INTO kurser_medlemmar(email, kurskod) VALUES ('$userEmail', '$courseCode')";
+				   					mysqli_query($con, $userCourseQuery);
 				   					
 				   					echo "<script>
            							alert('New course has been created!');
