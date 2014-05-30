@@ -30,7 +30,7 @@ if(!isset($_SESSION['loggedin'])){
 				<input type="text" name="kurskod" id="f1" placeholder="Course code...">
 			</div>
 			<div id="eName">
-				<input type="submit" name="submit" value="Upload">
+				<input type="submit" name="submit" value="Upload" id="uploadfile">
 			</div>
 		</form>
  	</body>

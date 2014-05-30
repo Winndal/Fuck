@@ -19,6 +19,7 @@ p{
     right: 0;
     bottom: 96%;
     height: 30px;
+    min-width: 1024px;
     border-bottom-left-radius:20px;
     border-bottom-right-radius:20px;
     box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.75);
@@ -96,6 +97,9 @@ ul.menu li a{
 #contentDiv{
     float: left;
     margin: 20 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
     min-width: 700px;
     background-color: #749C3F;
     border-radius: 20px;
@@ -106,9 +110,9 @@ ul.menu li a{
 }
 #reklamDiv{
     float: left;
-    margin-left: 35px;
     margin-top: 20px;
-    height: 160px;
+    margin-bottom: 20px;
+    margin-left: 5px;
     box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.75);
     border: 1px solid; 
 }
@@ -127,7 +131,7 @@ ul.menu li a{
     font-family: inherit;
     font-size: inherit;
 }
-#logoutBtn:hover{
+#logoutBtn:hover, #skapaKurs:hover, #uploadfile:hover{
     cursor: pointer;
 }
 #banner a{
