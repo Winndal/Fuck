@@ -18,8 +18,8 @@ p{
     position: absolute;
     background-color: #749C3F;
     top: 0;
-    left: 10%;
-    right: 10%;
+    left: 0;
+    right: 0;
     bottom: 96%;
     height: 30px;
     border-bottom-left-radius:20px;
@@ -29,14 +29,15 @@ p{
 #mainDiv{
     position: absolute;
     top: 30px;
-    left: 10%;
-    right: 10%;
+    left: 0;
+    right: 0;
     bottom: 100%;
 }
 #lmenu{
     float: left;
-    margin-left: 120px;
+    margin: 20px auto;
     width: 200px;
+    padding: 10px;
     background-color: #749C3F;
     border-radius: 20px;
     box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.75);
@@ -97,9 +98,8 @@ ul.menu li a{
 }
 #contentDiv{
     float: left;
-    margin-left: 35px;
-    max-width: 70%;
-    min-width: 700px !important;
+    margin: 20 auto;
+    min-width: 700px;
     background-color: #749C3F;
     border-radius: 20px;
     box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.75);
@@ -110,6 +110,7 @@ ul.menu li a{
 #reklamDiv{
     float: left;
     margin-left: 35px;
+    margin-top: 20px;
     height: 160px;
     box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.75);
     border: 1px solid; 
@@ -188,9 +189,10 @@ ul.filelist li{
 
 }
 #cmenu{
-    width: 100%;
-    overflow: hidden;
-    margin-top: 20px;
+    float: center;
+    display: block;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 #createcourse{
     padding: 9px;
