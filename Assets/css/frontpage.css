@@ -130,7 +130,7 @@ ul.menu li a{
     font-family: inherit;
     font-size: inherit;
 }
-#logoutBtn:hover, #skapaKurs:hover, #uploadfile:hover{
+#logoutBtn:hover, #skapaKurs:hover, #uploadfile:hover #coursedelete:hover{
     cursor: pointer;
 }
 #banner a{
