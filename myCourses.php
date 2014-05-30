@@ -50,7 +50,7 @@ if(!isset($_SESSION['loggedin'])){ //SÄKERHET
 						echo "<form method='POST' action='deleteMyCourse.php'>";
 						echo "<li style='color: black;'>" . ${'fn'.($i)};
 						echo"<input type='hidden' name='id' value='" . ${'id'.($i)} . "'>";
-						echo"<input type='submit' value='Delete'>";
+						echo"<input type='submit' id='courseDelete' value='Delete'>";
 						echo"</form>";
 						echo "</div>";
 					}
