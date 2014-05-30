@@ -39,7 +39,7 @@ if(!isset($_SESSION['loggedin'])){
  					</div>
  					<div id="menyDiv">
  						<ul class="menu">
- 							<li><a name="mycourses" >My Courses</a></li>
+ 							<li><a name="mycourses" onclick="return loadMyCourses()">My Courses</a></li>
  							<li><a name="myprojects" onclick="return buildinginprogress()">My Projects</a></li>
  							<li><a name="myuploads" onclick="loadMyUploads()">My Uploads</a></li>
  							<li><br></li>		

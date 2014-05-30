@@ -29,6 +29,11 @@ function validateRegister()
   }
 }
 
+function loadMyCourses()
+{
+  $("#contentDiv").load("myCourses.php");
+  
+}
 function loadUploadFile()
 {
 	$("#contentDiv").load("upload_filehtml.php");

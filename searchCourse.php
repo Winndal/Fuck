@@ -105,10 +105,15 @@
 	</head>
 	<body>
 		<div id="courseInfoDiv">
+			<form action="addToMyCourses.php" method="POST">
 			<a id="kursnamn"> <?php echo "Name: " . $courseName;?> </a>
 			<a id="kurskod"> <?php echo "Course code: " . $courseCode;?> </a>
 			<p id="start"> <?php echo "Start date: ", $courseSdate;?> </p>
 			<p id="slut"><?php echo "End date: ",$courseEdate;?> </p>
+			<input type="hidden" name="kurskod" value=<?php echo $courseCode;?>>
+			<input type="submit" value="Add to my courses">
+			</form>
+
 		</div>
 		<div id="fileAreaDiv">
 			<ul id="filelist" style="padding-left: 0px; list-style-type: none; margin-top: 0;">
