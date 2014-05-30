@@ -8,7 +8,7 @@
 	<body>
 		<img src="Assets/img/lov.jpg">
 		<div id="div_wrapper">
-			<a id="" >Welcome to UNIversity CrowdSourcing!</a>
+			<a id="" >Welcome to University Crowdsourcing!</a>
 		</div>
 		<div id="main">
 			<div id="div_userbox" class="bigbox">
