@@ -14,15 +14,44 @@
 			$loginEmail = mysqli_real_escape_string($con, $_POST["loginEmail"]); //emailen användaren ger vid login
 			$inputPassword = mysqli_real_escape_string($con, $_POST["password"]); //Lösenordet användaren ger vid login
 			
+			//ADMIN LOGIN START
+
+			if($loginEmail == 'admin@admin.admin'){
+				
+				$passwordQuery = "SELECT password, fnamn, enamn FROM medlemmar WHERE email = '$loginEmail'"; //Query
+				$passwordResult = mysqli_query($con, $passwordQuery); //Skickar query
+
+				$arr1 = mysqli_fetch_assoc($passwordResult); //Hämtar tabellen
+				$savedPassword = $arr1['password']; //Sätter saved till password i assoc arrayen.
+
+				$saltQuery = "SELECT salt FROM medlemmar WHERE email = '$loginEmail'"; //Saltet från databasen
+				$result = mysqli_query($con, $saltQuery);
+				$arr2 = mysqli_fetch_assoc($result);
+				$dbsalt = $arr2['salt'];
+			
+				$inputPassword = sha1($inputPassword.=$dbsalt); //Krypterar lösenordet från användaren med saltet.
+				
+				if($inputPassword == $savedPassword){
+				
+				$mellanrum = " ";
+				$wholeName = $arr1['fnamn'] .= $mellanrum .= $arr1['enamn'];
+
+				$_SESSION ['admin']= 'true';
+				$_SESSION ['email']= $loginEmail;
+				$_SESSION ['wholeName']= $wholeName;
+				$_SESSION ['loggedin'] = 'true';
+				header("location: admin.php");
+		 	}
+
+		 	// ADMIN LOGIN END
+
+			}	
+			
 			$passwordQuery = "SELECT password, fnamn, enamn FROM medlemmar WHERE email = '$loginEmail'"; //Query
 			$passwordResult = mysqli_query($con, $passwordQuery); //Skickar query
 
-					var_dump($passwordResult);
-					die();
-
 			$arr1 = mysqli_fetch_assoc($passwordResult); //Hämtar tabellen
 			$savedPassword = $arr1['password']; //Sätter saved till password i assoc arrayen.
-
 
 			$saltQuery = "SELECT salt FROM medlemmar WHERE email = '$loginEmail'"; //Saltet från databasen
 			$result = mysqli_query($con, $saltQuery);
@@ -32,8 +61,7 @@
 			$inputPassword = sha1($inputPassword.=$dbsalt); //Krypterar lösenordet från användaren med saltet.
 
 			if($inputPassword == $savedPassword) //Kontrollera om lösenorden matchar, isf skapa session, annars avbryt.
-			  {
-
+			{
 						$mellanrum = " ";
 						$wholeName = $arr1['fnamn'] .= $mellanrum .= $arr1['enamn'];
 
@@ -41,7 +69,7 @@
 							$_SESSION ['wholeName']=$wholeName;
 							$_SESSION ['loggedin'] = 'true';
 							header("location: frontpage.php");
-			  }
+		 	}
 			  else
 			  {
 

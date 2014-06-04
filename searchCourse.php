@@ -124,7 +124,6 @@
 						echo "<li style='color: black;'>" . ${'fn'.($i)} . "<br>". "<a href='Assets/upload/" . ${'sfn'.($i)} . "'>" . ${'sfn'.($i)} . "</a>" . "</li>";
 						echo "<li style='list-style-type: none; padding-bottom: 10px;'>" . "<a href='Assets/upload/" . ${'sfn'.($i)} . "' download='" . ${'sfn'.($i)} . "'>" . "Download</a>" . "</li>";
 						echo "</div>";
-						// echo "<li href='Assets/upload/" . ${'sfn'.($i)} . "'>" . ${'fn'.($i)} . "</a>" . "<br>";
 					}
 				?>
 			</ul>
