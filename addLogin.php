@@ -16,6 +16,10 @@
 			
 			$passwordQuery = "SELECT password, fnamn, enamn FROM medlemmar WHERE email = '$loginEmail'"; //Query
 			$passwordResult = mysqli_query($con, $passwordQuery); //Skickar query
+
+					var_dump($passwordResult);
+					die();
+
 			$arr1 = mysqli_fetch_assoc($passwordResult); //Hämtar tabellen
 			$savedPassword = $arr1['password']; //Sätter saved till password i assoc arrayen.
 

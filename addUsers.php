@@ -22,7 +22,7 @@
          	if ($atpos<1 || $dotpos<$atpos+2 || $dotpos+2>=strlen($email)||strlen($Fname) == 0) 
          		{
         			 die ("Du har fel syntax, var noga och skriv formen'erik svensson' och 'example@yahoo.com'");
-         			 header("location: sign_up.php"); 
+         			 header("location: register.php"); 
        			}
 
     		$emailQuery = "SELECT email FROM medlemmar WHERE email = '$email'";
